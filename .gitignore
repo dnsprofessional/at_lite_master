@@ -1,0 +1,32 @@
+﻿# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Visual Studio unwanted files
+*.suo
+*.sdf
+
+# Debug directories
+Debug/
+
+# Qt Creator unwanted files
+#*.pro
+*.pro.user
+
+# Planner's build directories
+BuildPlanner/
+/bin
+/tmp
+
+# All build
+/build/at_lite_build
