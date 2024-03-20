@@ -1,0 +1,8 @@
+encoding "utf8";
+
+import "kwtypes.proto";
+import "articles_base.proto";
+
+fuzzy "сигнальные" {
+    key = "чуть-чуть" | "немного" | "несколько" | "около" | "примерно"
+}

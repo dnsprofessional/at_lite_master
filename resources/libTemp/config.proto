@@ -1,0 +1,21 @@
+encoding "utf8";
+TTextMinerConfig {
+  Dictionary = "/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/resources/libTemp/dic.gzt";     
+  PrettyOutput = "/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/resources/libTemp/debug.html"; 
+  Input = {
+    File = "/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/resources/libTemp/input.txt";          
+    Type = dpl;               
+  }
+  Articles = [
+    { Name = "temporal" },
+    { Name = "fuzzy" }    
+  ]
+  Facts = [
+    { Name = "TempLexeme" },
+    { Name = "FuzzyLexeme" }
+  ]
+  Output = {
+    File = "/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/resources/libTemp/output.xml";        
+    Format = xml;
+  }
+}

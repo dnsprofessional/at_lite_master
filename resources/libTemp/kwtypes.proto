@@ -1,0 +1,25 @@
+import "base.proto";     
+import "articles_base.proto";
+import "kwtypes_base.proto";
+
+message dayOfWeek : TAuxDicArticle {}
+message months : TAuxDicArticle {}
+message noun : TAuxDicArticle {}
+message prep1 : TAuxDicArticle {}
+message prep2 : TAuxDicArticle {}
+message prep3 : TAuxDicArticle {}
+message prep4 : TAuxDicArticle {}
+message adv1 : TAuxDicArticle {}
+message adv2 : TAuxDicArticle {}
+message adv3 : TAuxDicArticle {}
+message adv4 : TAuxDicArticle {}
+message adv5 : TAuxDicArticle {}
+message adj1 : TAuxDicArticle {}
+message adj2 : TAuxDicArticle {}
+message adj3 : TAuxDicArticle {}
+message adj4 : TAuxDicArticle {}
+message adj5 : TAuxDicArticle {}
+message num1 : TAuxDicArticle {}
+message ordinals : TAuxDicArticle {}
+message cardinals : TAuxDicArticle {}
+message fuzzy : TAuxDicArticle {}
