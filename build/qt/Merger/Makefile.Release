@@ -14,7 +14,7 @@ CXX           = g++
 DEFINES       = -DULTRA_STATIC -DLIBXML_STATIC -DSTATIC_LIB -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -O2 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -O2 -std=gnu++11 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I. -I../../../src -I../../../src/libs/KnowledgeField -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtCore -Irelease -isystem /usr/include/libdrm -I. -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++
+INCPATH       = -I. -I../../../src -I../../../src/libs/KnowledgeField -I../../../lib/src/libxml2/include -I../../../lib/src/libiconv/include -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtCore -Irelease -isystem /usr/include/libdrm -I. -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++
 QMAKE         = /Qt/5.11.2/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -34,7 +34,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = Merger1.0.0
-DISTDIR = /home/everyone/AT_Lidia/at_lite-amrr-md-mod/build/qt/Merger/release/Merger1.0.0
+DISTDIR = /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/release/Merger1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1 -Wl,-rpath,/Qt/5.11.2/gcc_64/lib -shared -Wl,-soname,libMerger.so.1
 LIBS          = $(SUBLIBS) -L../ATProject -lATProject -L../ATGUI -lATGUI -L../ATCore -lATCore -L../libiconv -liconv -L../libxml2 -lxml2 -L../KnowledgeField -lKnowledgeField -L/Qt/5.11.2/gcc_64/lib -lQt5Widgets -lQt5Gui -lQt5Sql -lQt5Core -lGL -lpthread 
@@ -447,7 +447,7 @@ release/moc_mainwindow.cpp: /Qt/5.11.2/gcc_64/include/QtWidgets/QMainWindow \
 		../../../src/plugins/Merger/mainwindow.h \
 		release/moc_predefs.h \
 		/Qt/5.11.2/gcc_64/bin/moc
-	/Qt/5.11.2/gcc_64/bin/moc $(DEFINES) --include /home/everyone/AT_Lidia/at_lite-amrr-md-mod/build/qt/Merger/release/moc_predefs.h -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++ -I/home/everyone/AT_Lidia/at_lite-amrr-md-mod/build/qt/Merger -I/home/everyone/AT_Lidia/at_lite-amrr-md-mod/src -I/home/everyone/AT_Lidia/at_lite-amrr-md-mod/src/libs/KnowledgeField -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../../../src/plugins/Merger/mainwindow.h -o release/moc_mainwindow.cpp
+	/Qt/5.11.2/gcc_64/bin/moc $(DEFINES) --include /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/release/moc_predefs.h -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++ -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/src -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/src/libs/KnowledgeField -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src/libxml2/include -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src/libiconv/include -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../../../src/plugins/Merger/mainwindow.h -o release/moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -497,6 +497,19 @@ release/mergerplugin.o: ../../../src/plugins/Merger/mergerplugin.cpp ../../../sr
 		../../../src/global_conf.h \
 		../../../src/ATCore/AError.h \
 		../../../src/ATCore/ASingleton.h \
+		../../../src/edfd_cover/APlan.h \
+		../../../src/ATCore/ANamedObject.h \
+		../../../src/ATCore/edfd/DFDElement.h \
+		../../../src/ATCore/config.h \
+		../../../src/ATCore/utils/geometry.h \
+		../../../src/planner_core/core/algorithm/graph.h \
+		../../../src/planner_core/core/io/streamer.h \
+		../../../src/ATCore/feature_tree.h \
+		../../../src/ATCore/check.h \
+		../../../src/ATCore/utils/helpers.h \
+		../../../src/ATCore/simple_tree.h \
+		../../../src/ATPlanner/ATPlanner.h \
+		../../../src/ATCore/ADelegatedObject.h \
 		../../../src/plugins/Merger/mainwindow.h \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/QMainWindow \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qmainwindow.h \
@@ -587,8 +600,7 @@ release/mergerplugin.o: ../../../src/plugins/Merger/mergerplugin.cpp ../../../sr
 		../../../src/libs/KnowledgeField/knowledge_field_t.h \
 		../../../src/ATGUI/ATaskExecutionWindow.h \
 		../../../src/ATProject/ADocumentRef.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/QString \
-		../../../src/ATCore/check.h
+		/Qt/5.11.2/gcc_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/mergerplugin.o ../../../src/plugins/Merger/mergerplugin.cpp
 
 release/mainwindow.o: ../../../src/plugins/Merger/mainwindow.cpp ../../../src/plugins/Merger/mainwindow.h \
@@ -701,6 +713,38 @@ release/mainwindow.o: ../../../src/plugins/Merger/mainwindow.cpp ../../../src/pl
 		../../../src/plugins/Merger/merger_t.h \
 		../../../src/libs/KnowledgeField/knowledge_field_t.h \
 		ui_mainwindow.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/QVariant \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QAction \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qaction.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qactiongroup.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QApplication \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qapplication.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qcoreapplication.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qeventloop.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qguiapplication.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qinputmethod.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QLabel \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qlabel.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qframe.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QLineEdit \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qlineedit.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextcursor.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextformat.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qpen.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextoption.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QMenu \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qmenu.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QMenuBar \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qmenubar.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QPushButton \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qpushbutton.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QStatusBar \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qstatusbar.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QToolBar \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtoolbar.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QWidget \
 		../../../src/plugins/Merger/tester_t.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/mainwindow.o ../../../src/plugins/Merger/mainwindow.cpp
 

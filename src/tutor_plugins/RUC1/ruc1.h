@@ -13,7 +13,7 @@ public:
     ~RUC1();
     // APlugin interface
 public:
-    int executeTask(ATaskExecutionWindow *wnd, const std::string &cmd_id, const std::vector<ADocumentRef *> &input_docs, const std::vector<ADocumentRef *> &out_docs);
+    int executeTask(ATaskExecutionWindow *wnd, const std::string &cmd_id, const std::vector<ADocumentRef *> &input_docs, const std::vector<ADocumentRef *> &out_docs, APlanTask* current_task);
 
     // AUtilityPlugin interface
 public:

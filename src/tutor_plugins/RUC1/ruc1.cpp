@@ -17,7 +17,7 @@ RUC1::RUC1()
 
 }
 
-int RUC1::executeTask(ATaskExecutionWindow * wnd, const std::string&, const std::vector<ADocumentRef*>&, const std::vector<ADocumentRef*>& out_docs) {
+int RUC1::executeTask(ATaskExecutionWindow * wnd, const std::string&, const std::vector<ADocumentRef*>&, const std::vector<ADocumentRef*>& out_docs, APlanTask* current_task) {
   auto dialog = new MainWidget(wnd);
   wnd->setCentralWidget(dialog);
   //dialog->outFName = out_docs[0]->absolutePath().toStdString();

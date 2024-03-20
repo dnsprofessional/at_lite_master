@@ -10,7 +10,7 @@ class Q_DECL_EXPORT MergerPlugin : public AUtilityPlugin
     MergerPlugin();
     ~MergerPlugin();
 
-    virtual int executeTask(ATaskExecutionWindow * wnd, const std::string & cmd_id, const std::vector<ADocumentRef*> & input_docs, const std::vector<ADocumentRef*> &) override;
+    virtual int executeTask(ATaskExecutionWindow * wnd, const std::string & cmd_id, const std::vector<ADocumentRef*> & input_docs, const std::vector<ADocumentRef*> &, APlanTask* current_task) override;
 
     virtual const std::vector<std::string> getCommands();
     virtual AError executeCommand(const std::string & script, std::string & answer);

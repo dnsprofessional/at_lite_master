@@ -28,7 +28,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = build_all1.0.0
-DISTDIR = /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/.tmp/build_all1.0.0
+DISTDIR = /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/.tmp/build_all1.0.0
 SUBTARGETS    =  \
 		sub-KFVerifier \
 		sub-RUC1 \
@@ -57,579 +57,579 @@ SUBTARGETS    =  \
 
 sub-KFVerifier-qmake_all:  FORCE
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd KFVerifier/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd KFVerifier/ && $(MAKE) -f Makefile qmake_all
 sub-KFVerifier: FORCE
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-KFVerifier-make_first: FORCE
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-KFVerifier-all: FORCE
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-KFVerifier-clean: FORCE
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-KFVerifier-distclean: FORCE
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-KFVerifier-install_subtargets: FORCE
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-KFVerifier-uninstall_subtargets: FORCE
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-RUC1-qmake_all:  FORCE
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd RUC1/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd RUC1/ && $(MAKE) -f Makefile qmake_all
 sub-RUC1: FORCE
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-RUC1-make_first: FORCE
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-RUC1-all: FORCE
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-RUC1-clean: FORCE
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-RUC1-distclean: FORCE
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-RUC1-install_subtargets: FORCE
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-RUC1-uninstall_subtargets: FORCE
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-libiconv-qmake_all:  FORCE
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd libiconv/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd libiconv/ && $(MAKE) -f Makefile qmake_all
 sub-libiconv: FORCE
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-libiconv-make_first: FORCE
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-libiconv-all: FORCE
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-libiconv-clean: FORCE
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-libiconv-distclean: FORCE
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-libiconv-install_subtargets: FORCE
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-libiconv-uninstall_subtargets: FORCE
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-libxml2-qmake_all:  FORCE
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd libxml2/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd libxml2/ && $(MAKE) -f Makefile qmake_all
 sub-libxml2: FORCE
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-libxml2-make_first: FORCE
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-libxml2-all: FORCE
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-libxml2-clean: FORCE
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-libxml2-distclean: FORCE
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-libxml2-install_subtargets: FORCE
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-libxml2-uninstall_subtargets: FORCE
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-ATCore-qmake_all:  FORCE
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd ATCore/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd ATCore/ && $(MAKE) -f Makefile qmake_all
 sub-ATCore: FORCE
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-ATCore-make_first: FORCE
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-ATCore-all: FORCE
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-ATCore-clean: FORCE
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-ATCore-distclean: FORCE
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-ATCore-install_subtargets: FORCE
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-ATCore-uninstall_subtargets: FORCE
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-ATProject-qmake_all:  FORCE
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd ATProject/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd ATProject/ && $(MAKE) -f Makefile qmake_all
 sub-ATProject: FORCE
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-ATProject-make_first: FORCE
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-ATProject-all: FORCE
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-ATProject-clean: FORCE
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-ATProject-distclean: FORCE
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-ATProject-install_subtargets: FORCE
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-ATProject-uninstall_subtargets: FORCE
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-ATLinker-qmake_all:  FORCE
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd ATLinker/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd ATLinker/ && $(MAKE) -f Makefile qmake_all
 sub-ATLinker: FORCE
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-ATLinker-make_first: FORCE
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-ATLinker-all: FORCE
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-ATLinker-clean: FORCE
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-ATLinker-distclean: FORCE
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-ATLinker-install_subtargets: FORCE
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-ATLinker-uninstall_subtargets: FORCE
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-ATGUI-qmake_all:  FORCE
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd ATGUI/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd ATGUI/ && $(MAKE) -f Makefile qmake_all
 sub-ATGUI: FORCE
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-ATGUI-make_first: FORCE
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-ATGUI-all: FORCE
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-ATGUI-clean: FORCE
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-ATGUI-distclean: FORCE
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-ATGUI-install_subtargets: FORCE
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-ATGUI-uninstall_subtargets: FORCE
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-EDFDEditor-qmake_all:  FORCE
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd EDFDEditor/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd EDFDEditor/ && $(MAKE) -f Makefile qmake_all
 sub-EDFDEditor: FORCE
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-EDFDEditor-make_first: FORCE
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-EDFDEditor-all: FORCE
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-EDFDEditor-clean: FORCE
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-EDFDEditor-distclean: FORCE
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-EDFDEditor-install_subtargets: FORCE
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-EDFDEditor-uninstall_subtargets: FORCE
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-UCore-qmake_all:  FORCE
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd UCore/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd UCore/ && $(MAKE) -f Makefile qmake_all
 sub-UCore: FORCE
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-UCore-make_first: FORCE
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-UCore-all: FORCE
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-UCore-clean: FORCE
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-UCore-distclean: FORCE
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-UCore-install_subtargets: FORCE
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-UCore-uninstall_subtargets: FORCE
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-EDFDCover-qmake_all:  FORCE
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd EDFDCover/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd EDFDCover/ && $(MAKE) -f Makefile qmake_all
 sub-EDFDCover: FORCE
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-EDFDCover-make_first: FORCE
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-EDFDCover-all: FORCE
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-EDFDCover-clean: FORCE
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-EDFDCover-distclean: FORCE
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-EDFDCover-install_subtargets: FORCE
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-EDFDCover-uninstall_subtargets: FORCE
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-ATPlanner-qmake_all:  FORCE
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd ATPlanner/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd ATPlanner/ && $(MAKE) -f Makefile qmake_all
 sub-ATPlanner: FORCE
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-ATPlanner-make_first: FORCE
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-ATPlanner-all: FORCE
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-ATPlanner-clean: FORCE
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-ATPlanner-distclean: FORCE
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-ATPlanner-install_subtargets: FORCE
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-ATPlanner-uninstall_subtargets: FORCE
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-DSFEditor-qmake_all:  FORCE
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd DSFEditor/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd DSFEditor/ && $(MAKE) -f Makefile qmake_all
 sub-DSFEditor: FORCE
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-DSFEditor-make_first: FORCE
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-DSFEditor-all: FORCE
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-DSFEditor-clean: FORCE
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-DSFEditor-distclean: FORCE
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-DSFEditor-install_subtargets: FORCE
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-DSFEditor-uninstall_subtargets: FORCE
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-ATTextEditor-qmake_all:  FORCE
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd ATTextEditor/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd ATTextEditor/ && $(MAKE) -f Makefile qmake_all
 sub-ATTextEditor: FORCE
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-ATTextEditor-make_first: FORCE
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-ATTextEditor-all: FORCE
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-ATTextEditor-clean: FORCE
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-ATTextEditor-distclean: FORCE
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-ATTextEditor-install_subtargets: FORCE
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-ATTextEditor-uninstall_subtargets: FORCE
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-KBEditor-qmake_all:  FORCE
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd KBEditor/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd KBEditor/ && $(MAKE) -f Makefile qmake_all
 sub-KBEditor: FORCE
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-KBEditor-make_first: FORCE
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-KBEditor-all: FORCE
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-KBEditor-clean: FORCE
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-KBEditor-distclean: FORCE
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-KBEditor-install_subtargets: FORCE
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-KBEditor-uninstall_subtargets: FORCE
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-ATVerifier-qmake_all:  FORCE
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd ATVerifier/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd ATVerifier/ && $(MAKE) -f Makefile qmake_all
 sub-ATVerifier: FORCE
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-ATVerifier-make_first: FORCE
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-ATVerifier-all: FORCE
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-ATVerifier-clean: FORCE
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-ATVerifier-distclean: FORCE
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-ATVerifier-install_subtargets: FORCE
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-ATVerifier-uninstall_subtargets: FORCE
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-KMPZ-qmake_all:  FORCE
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd KMPZ/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd KMPZ/ && $(MAKE) -f Makefile qmake_all
 sub-KMPZ: FORCE
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-KMPZ-make_first: FORCE
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-KMPZ-all: FORCE
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-KMPZ-clean: FORCE
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-KMPZ-distclean: FORCE
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-KMPZ-install_subtargets: FORCE
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-KMPZ-uninstall_subtargets: FORCE
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-ATWorkbench-qmake_all:  FORCE
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd ATWorkbench/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd ATWorkbench/ && $(MAKE) -f Makefile qmake_all
 sub-ATWorkbench: FORCE
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-ATWorkbench-make_first: FORCE
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-ATWorkbench-all: FORCE
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-ATWorkbench-clean: FORCE
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-ATWorkbench-distclean: FORCE
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-ATWorkbench-install_subtargets: FORCE
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-ATWorkbench-uninstall_subtargets: FORCE
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-KnowledgeField-qmake_all:  FORCE
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd KnowledgeField/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd KnowledgeField/ && $(MAKE) -f Makefile qmake_all
 sub-KnowledgeField: FORCE
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-KnowledgeField-make_first: FORCE
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-KnowledgeField-all: FORCE
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-KnowledgeField-clean: FORCE
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-KnowledgeField-distclean: FORCE
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-KnowledgeField-install_subtargets: FORCE
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-KnowledgeField-uninstall_subtargets: FORCE
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-DataMining-qmake_all:  FORCE
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd DataMining/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd DataMining/ && $(MAKE) -f Makefile qmake_all
 sub-DataMining: FORCE
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-DataMining-make_first: FORCE
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-DataMining-all: FORCE
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-DataMining-clean: FORCE
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-DataMining-distclean: FORCE
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-DataMining-install_subtargets: FORCE
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-DataMining-uninstall_subtargets: FORCE
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-Merger-qmake_all:  FORCE
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd Merger/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd Merger/ && $(MAKE) -f Makefile qmake_all
 sub-Merger: FORCE
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-Merger-make_first: FORCE
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-Merger-all: FORCE
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-Merger-clean: FORCE
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-Merger-distclean: FORCE
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-Merger-install_subtargets: FORCE
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-Merger-uninstall_subtargets: FORCE
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-Protocols-qmake_all:  FORCE
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd Protocols/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd Protocols/ && $(MAKE) -f Makefile qmake_all
 sub-Protocols: FORCE
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-Protocols-make_first: FORCE
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-Protocols-all: FORCE
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-Protocols-clean: FORCE
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-Protocols-distclean: FORCE
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-Protocols-install_subtargets: FORCE
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-Protocols-uninstall_subtargets: FORCE
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 sub-Tests-EDFDCoverTest-qmake_all:  FORCE
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
+	cd Tests/EDFDCoverTest/ && $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 	cd Tests/EDFDCoverTest/ && $(MAKE) -f Makefile qmake_all
 sub-Tests-EDFDCoverTest: FORCE
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile
 sub-Tests-EDFDCoverTest-make_first: FORCE
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile 
 sub-Tests-EDFDCoverTest-all: FORCE
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile all
 sub-Tests-EDFDCoverTest-clean: FORCE
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile clean
 sub-Tests-EDFDCoverTest-distclean: FORCE
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile distclean
 sub-Tests-EDFDCoverTest-install_subtargets: FORCE
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile install
 sub-Tests-EDFDCoverTest-uninstall_subtargets: FORCE
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile uninstall
 
 Makefile: build_all.pro /Qt/5.11.2/gcc_64/mkspecs/linux-g++/qmake.conf /Qt/5.11.2/gcc_64/mkspecs/features/spec_pre.prf \
 		/Qt/5.11.2/gcc_64/mkspecs/common/unix.conf \
@@ -1018,286 +1018,286 @@ uninstall_subtargets: sub-KFVerifier-uninstall_subtargets sub-RUC1-uninstall_sub
 
 sub-KFVerifier-debug:
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-RUC1-debug:
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-libiconv-debug:
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-libxml2-debug:
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-ATCore-debug:
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-ATProject-debug:
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-ATLinker-debug:
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-ATGUI-debug:
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-EDFDEditor-debug:
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-UCore-debug:
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-EDFDCover-debug:
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-ATPlanner-debug:
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-DSFEditor-debug:
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-ATTextEditor-debug:
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-KBEditor-debug:
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-ATVerifier-debug:
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-KMPZ-debug:
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-ATWorkbench-debug:
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-KnowledgeField-debug:
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-DataMining-debug:
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-Merger-debug:
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-Protocols-debug:
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 sub-Tests-EDFDCoverTest-debug:
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile debug
 debug: sub-KFVerifier-debug sub-RUC1-debug sub-libiconv-debug sub-libxml2-debug sub-ATCore-debug sub-ATProject-debug sub-ATLinker-debug sub-ATGUI-debug sub-EDFDEditor-debug sub-UCore-debug sub-EDFDCover-debug sub-ATPlanner-debug sub-DSFEditor-debug sub-ATTextEditor-debug sub-KBEditor-debug sub-ATVerifier-debug sub-KMPZ-debug sub-ATWorkbench-debug sub-KnowledgeField-debug sub-DataMining-debug sub-Merger-debug sub-Protocols-debug sub-Tests-EDFDCoverTest-debug
 
 sub-KFVerifier-release:
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-RUC1-release:
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-libiconv-release:
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-libxml2-release:
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-ATCore-release:
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-ATProject-release:
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-ATLinker-release:
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-ATGUI-release:
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-EDFDEditor-release:
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-UCore-release:
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-EDFDCover-release:
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-ATPlanner-release:
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-DSFEditor-release:
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-ATTextEditor-release:
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-KBEditor-release:
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-ATVerifier-release:
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-KMPZ-release:
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-ATWorkbench-release:
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-KnowledgeField-release:
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-DataMining-release:
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-Merger-release:
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-Protocols-release:
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 sub-Tests-EDFDCoverTest-release:
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile release
 release: sub-KFVerifier-release sub-RUC1-release sub-libiconv-release sub-libxml2-release sub-ATCore-release sub-ATProject-release sub-ATLinker-release sub-ATGUI-release sub-EDFDEditor-release sub-UCore-release sub-EDFDCover-release sub-ATPlanner-release sub-DSFEditor-release sub-ATTextEditor-release sub-KBEditor-release sub-ATVerifier-release sub-KMPZ-release sub-ATWorkbench-release sub-KnowledgeField-release sub-DataMining-release sub-Merger-release sub-Protocols-release sub-Tests-EDFDCoverTest-release
 
 sub-KFVerifier-check:
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-RUC1-check:
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-libiconv-check:
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-libxml2-check:
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-ATCore-check:
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-ATProject-check:
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-ATLinker-check:
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-ATGUI-check:
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-EDFDEditor-check:
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-UCore-check:
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-EDFDCover-check:
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-ATPlanner-check:
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-DSFEditor-check:
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-ATTextEditor-check:
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-KBEditor-check:
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-ATVerifier-check:
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-KMPZ-check:
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-ATWorkbench-check:
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-KnowledgeField-check:
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-DataMining-check:
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-Merger-check:
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-Protocols-check:
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 sub-Tests-EDFDCoverTest-check:
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile check
 check: sub-KFVerifier-check sub-RUC1-check sub-libiconv-check sub-libxml2-check sub-ATCore-check sub-ATProject-check sub-ATLinker-check sub-ATGUI-check sub-EDFDEditor-check sub-UCore-check sub-EDFDCover-check sub-ATPlanner-check sub-DSFEditor-check sub-ATTextEditor-check sub-KBEditor-check sub-ATVerifier-check sub-KMPZ-check sub-ATWorkbench-check sub-KnowledgeField-check sub-DataMining-check sub-Merger-check sub-Protocols-check sub-Tests-EDFDCoverTest-check
 
 sub-KFVerifier-benchmark:
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-RUC1-benchmark:
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-libiconv-benchmark:
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-libxml2-benchmark:
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-ATCore-benchmark:
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-ATProject-benchmark:
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-ATLinker-benchmark:
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-ATGUI-benchmark:
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-EDFDEditor-benchmark:
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-UCore-benchmark:
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-EDFDCover-benchmark:
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-ATPlanner-benchmark:
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-DSFEditor-benchmark:
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-ATTextEditor-benchmark:
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-KBEditor-benchmark:
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-ATVerifier-benchmark:
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-KMPZ-benchmark:
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-ATWorkbench-benchmark:
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-KnowledgeField-benchmark:
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-DataMining-benchmark:
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-Merger-benchmark:
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-Protocols-benchmark:
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 sub-Tests-EDFDCoverTest-benchmark:
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -f Makefile benchmark
 benchmark: sub-KFVerifier-benchmark sub-RUC1-benchmark sub-libiconv-benchmark sub-libxml2-benchmark sub-ATCore-benchmark sub-ATProject-benchmark sub-ATLinker-benchmark sub-ATGUI-benchmark sub-EDFDEditor-benchmark sub-UCore-benchmark sub-EDFDCover-benchmark sub-ATPlanner-benchmark sub-DSFEditor-benchmark sub-ATTextEditor-benchmark sub-KBEditor-benchmark sub-ATVerifier-benchmark sub-KMPZ-benchmark sub-ATWorkbench-benchmark sub-KnowledgeField-benchmark sub-DataMining-benchmark sub-Merger-benchmark sub-Protocols-benchmark sub-Tests-EDFDCoverTest-benchmark
 install:install_subtargets  FORCE
 
@@ -1314,93 +1314,93 @@ distdir: sub-KFVerifier-distdir sub-RUC1-distdir sub-libiconv-distdir sub-libxml
 
 sub-KFVerifier-distdir: FORCE
 	@test -d KFVerifier/ || mkdir -p KFVerifier/
-	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/KFVerifier
+	cd KFVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/KFVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/KFVerifier
 
 sub-RUC1-distdir: FORCE
 	@test -d RUC1/ || mkdir -p RUC1/
-	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/RUC1
+	cd RUC1/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/RUC1/RUC1.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/RUC1
 
 sub-libiconv-distdir: FORCE
 	@test -d libiconv/ || mkdir -p libiconv/
-	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/libiconv
+	cd libiconv/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libiconv/libiconv.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/libiconv
 
 sub-libxml2-distdir: FORCE
 	@test -d libxml2/ || mkdir -p libxml2/
-	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/libxml2
+	cd libxml2/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/libxml2/libxml2.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/libxml2
 
 sub-ATCore-distdir: FORCE
 	@test -d ATCore/ || mkdir -p ATCore/
-	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATCore
+	cd ATCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATCore/ATCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATCore
 
 sub-ATProject-distdir: FORCE
 	@test -d ATProject/ || mkdir -p ATProject/
-	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATProject
+	cd ATProject/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATProject/ATProject.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATProject
 
 sub-ATLinker-distdir: FORCE
 	@test -d ATLinker/ || mkdir -p ATLinker/
-	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATLinker
+	cd ATLinker/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATLinker/ATLinker.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATLinker
 
 sub-ATGUI-distdir: FORCE
 	@test -d ATGUI/ || mkdir -p ATGUI/
-	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATGUI
+	cd ATGUI/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATGUI/ATGUI.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATGUI
 
 sub-EDFDEditor-distdir: FORCE
 	@test -d EDFDEditor/ || mkdir -p EDFDEditor/
-	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/EDFDEditor
+	cd EDFDEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDEditor/EDFDEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/EDFDEditor
 
 sub-UCore-distdir: FORCE
 	@test -d UCore/ || mkdir -p UCore/
-	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/UCore
+	cd UCore/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/UCore/UCore.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/UCore
 
 sub-EDFDCover-distdir: FORCE
 	@test -d EDFDCover/ || mkdir -p EDFDCover/
-	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/EDFDCover
+	cd EDFDCover/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/EDFDCover/EDFDCover.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/EDFDCover
 
 sub-ATPlanner-distdir: FORCE
 	@test -d ATPlanner/ || mkdir -p ATPlanner/
-	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATPlanner
+	cd ATPlanner/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATPlanner/ATPlanner.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATPlanner
 
 sub-DSFEditor-distdir: FORCE
 	@test -d DSFEditor/ || mkdir -p DSFEditor/
-	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/DSFEditor
+	cd DSFEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DSFEditor/DSFEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/DSFEditor
 
 sub-ATTextEditor-distdir: FORCE
 	@test -d ATTextEditor/ || mkdir -p ATTextEditor/
-	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATTextEditor
+	cd ATTextEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATTextEditor/ATTextEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATTextEditor
 
 sub-KBEditor-distdir: FORCE
 	@test -d KBEditor/ || mkdir -p KBEditor/
-	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/KBEditor
+	cd KBEditor/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KBEditor/KBEditor.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/KBEditor
 
 sub-ATVerifier-distdir: FORCE
 	@test -d ATVerifier/ || mkdir -p ATVerifier/
-	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATVerifier
+	cd ATVerifier/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATVerifier/ATVerifier.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATVerifier
 
 sub-KMPZ-distdir: FORCE
 	@test -d KMPZ/ || mkdir -p KMPZ/
-	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/KMPZ
+	cd KMPZ/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KMPZ/KMPZ.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/KMPZ
 
 sub-ATWorkbench-distdir: FORCE
 	@test -d ATWorkbench/ || mkdir -p ATWorkbench/
-	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATWorkbench
+	cd ATWorkbench/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/ATWorkbench/ATWorkbench.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/ATWorkbench
 
 sub-KnowledgeField-distdir: FORCE
 	@test -d KnowledgeField/ || mkdir -p KnowledgeField/
-	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/KnowledgeField
+	cd KnowledgeField/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/KnowledgeField.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/KnowledgeField
 
 sub-DataMining-distdir: FORCE
 	@test -d DataMining/ || mkdir -p DataMining/
-	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/DataMining
+	cd DataMining/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/DataMining/DataMining.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/DataMining
 
 sub-Merger-distdir: FORCE
 	@test -d Merger/ || mkdir -p Merger/
-	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/Merger
+	cd Merger/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/Merger.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/Merger
 
 sub-Protocols-distdir: FORCE
 	@test -d Protocols/ || mkdir -p Protocols/
-	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/Protocols
+	cd Protocols/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Protocols/Protocols.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/Protocols
 
 sub-Tests-EDFDCoverTest-distdir: FORCE
 	@test -d Tests/EDFDCoverTest/ || mkdir -p Tests/EDFDCoverTest/
-	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya/AT_Eule/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/Tests/EDFDCoverTest
+	cd Tests/EDFDCoverTest/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Tests/EDFDCoverTest/EDFDCoverTest.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/Tests/EDFDCoverTest
 

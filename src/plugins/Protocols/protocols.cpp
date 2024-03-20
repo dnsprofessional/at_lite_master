@@ -18,6 +18,7 @@
 #include <QApplication>
 #include <QTreeView>
 #include <QColumnView>
+#include <QString>
 
 APlugin * AT_CREATE_PLUGIN_FN()
 {
@@ -50,7 +51,7 @@ AError Protocols::executeCommand(const std::string & script, std::string & answe
 	return AError();
 }
 
-int Protocols::executeTask(ATaskExecutionWindow * wnd, const std::string & cmd_id, const std::vector<ADocumentRef*> & input_docs, const std::vector<ADocumentRef*> & out_docs)
+int Protocols::executeTask(ATaskExecutionWindow * wnd, const std::string & cmd_id, const std::vector<ADocumentRef*> & input_docs, const std::vector<ADocumentRef*> & out_docs, APlanTask* current_task)
 {
 	auto lb = new QLabel("Protocols start", wnd);
 

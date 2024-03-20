@@ -8,7 +8,7 @@ DEFINES += ULTRA_STATIC LIBXML_STATIC STATIC_LIB
 
 VPATH += ../../../src/plugins/Merger
 
-INCLUDEPATH += ../../../src ../../../src/libs/KnowledgeField
+INCLUDEPATH += ../../../src ../../../src/libs/KnowledgeField ../../../lib/src/libxml2/include ../../../lib/src/libiconv/include
 
 SOURCES += mergerplugin.cpp \
     mainwindow.cpp \

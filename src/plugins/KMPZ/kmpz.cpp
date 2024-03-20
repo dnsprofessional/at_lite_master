@@ -52,7 +52,7 @@ void ATKMPZPlugin::savePZToFile() {
 //        f->open(QFile::WriteOnly);
     }
 
-int ATKMPZPlugin::executeTask(ATaskExecutionWindow * wnd, const std::string&, const std::vector<ADocumentRef*>& input_docs, const std::vector<ADocumentRef*>&)
+int ATKMPZPlugin::executeTask(ATaskExecutionWindow * wnd, const std::string&, const std::vector<ADocumentRef*>& input_docs, const std::vector<ADocumentRef*>&, APlanTask* current_task)
 {
     this->docs = input_docs;
     YOSDIInterpreter *interp = new YOSDIInterpreter(wnd);

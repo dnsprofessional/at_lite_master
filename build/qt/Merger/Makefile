@@ -30,7 +30,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = Merger1.0.0
-DISTDIR = /home/everyone/AT_Lidia/at_lite-amrr-md-mod/build/qt/Merger/.tmp/Merger1.0.0
+DISTDIR = /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/Merger/.tmp/Merger1.0.0
 SUBTARGETS    =  \
 		debug \
 		release

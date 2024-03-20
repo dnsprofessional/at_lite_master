@@ -18,7 +18,7 @@ public:
 
     virtual const std::vector<std::string> getCommands() override;
     virtual AError executeCommand(const std::string& script, std::string& answer) override;
-    virtual int executeTask(ATaskExecutionWindow* wnd, const std::string& cmd_id, const std::vector<ADocumentRef*>& input_docs, const std::vector<ADocumentRef*>& out_docs) override;
+    virtual int executeTask(ATaskExecutionWindow* wnd, const std::string& cmd_id, const std::vector<ADocumentRef*>& input_docs, const std::vector<ADocumentRef*>& out_docs, APlanTask* current_task) override;
 
 private:
     std::unique_ptr<YOSDIInterpreter> _interpreter;

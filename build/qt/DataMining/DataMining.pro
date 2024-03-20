@@ -8,7 +8,7 @@ DEFINES += ULTRA_STATIC LIBXML_STATIC STATIC_LIB
 
 VPATH += ../../../src/plugins/DataMining
 
-INCLUDEPATH += ../../../src ../../../src/libs/KnowledgeField
+INCLUDEPATH += ../../../src ../../../src/libs/KnowledgeField ../../../lib/src/libxml2/include
 
 SOURCES += dataminingplugin.cpp\
     mainwindow.cpp \

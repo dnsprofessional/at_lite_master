@@ -26,7 +26,7 @@ SUBDIRS += \
         DataMining \
         Merger \
         Protocols \
-        Tests/EDFDCoverTest \
+        Tests/EDFDCoverTest
 
 SOURCES += \
     ../../src/plugins/KMPZ/forms/common/setup_script.cpp
