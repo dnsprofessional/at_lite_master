@@ -28,6 +28,7 @@ public:
     std::vector<std::pair<const temporal_rule_t*, std::pair<const temporal_entity_t*, const temporal_entity_t*>>> get_impossiblePositioning() {return impossiblePositioning; }
 
     knowledge_field_t* readFromFile(QString filename);
+    knowledge_field_t* readFromXml(xmlDoc* kf_doc);
 
     std::vector<const temporal_rule_t*> verifyImpossiblePositioning();
     std::vector<std::pair<const temporal_rule_t*, std::pair<const temporal_entity_t*, const temporal_entity_t*>>> verifyImpossiblePositioningII();

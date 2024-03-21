@@ -22,7 +22,7 @@ public:
 
 private:
     std::unique_ptr<YOSDIInterpreter> _interpreter;
-    std::vector<ADocumentRef*> docs;
+    ADocumentRef* kf_fragments;
 
 public slots:
     void savePZToFile();

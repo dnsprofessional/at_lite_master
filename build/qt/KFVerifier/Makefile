@@ -15,7 +15,7 @@ CXX           = g++
 DEFINES       = -DKFVERIFIER_LIBRARY -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I. -I../../../src -I../../../lib/src -I../../../lib/src/libxml2/include -I../../../lib/src/libiconv/include -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtXml -I/Qt/5.11.2/gcc_64/include/QtCore -I. -isystem /usr/include/libdrm -I. -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++
+INCPATH       = -I. -I../../../src -I../../../lib/src -I../../../lib/src/libxml2/include -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtXml -I/Qt/5.11.2/gcc_64/include/QtCore -I. -isystem /usr/include/libdrm -I. -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++
 QMAKE         = /Qt/5.11.2/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -838,15 +838,44 @@ moc_mainwidget.cpp: /Qt/5.11.2/gcc_64/include/QtWidgets/QWidget \
 		/Qt/5.11.2/gcc_64/include/QtGui/qtouchdevice.h \
 		verifier.h \
 		../../../src/libs/KnowledgeField/knowledge_field_t.h \
+		../../../src/ATCore/utils/xml_helpers.h \
+		../../../src/ATCore/config.h \
+		../../../src/global_conf.h \
+		../../../lib/src/libxml2/include/libxml/tree.h \
+		../../../lib/src/libxml2/include/libxml/xmlversion.h \
+		../../../lib/src/libxml2/include/libxml/xmlexports.h \
+		../../../lib/src/libxml2/include/libxml/xmlstring.h \
+		../../../lib/src/libxml2/include/libxml/xmlregexp.h \
+		../../../lib/src/libxml2/include/libxml/dict.h \
+		../../../lib/src/libxml2/include/libxml/xmlmemory.h \
+		../../../lib/src/libxml2/include/libxml/threads.h \
+		../../../lib/src/libxml2/include/libxml/globals.h \
+		../../../lib/src/libxml2/include/libxml/parser.h \
+		../../../lib/src/libxml2/include/libxml/hash.h \
+		../../../lib/src/libxml2/include/libxml/valid.h \
+		../../../lib/src/libxml2/include/libxml/xmlerror.h \
+		../../../lib/src/libxml2/include/libxml/list.h \
+		../../../lib/src/libxml2/include/libxml/xmlautomata.h \
+		../../../lib/src/libxml2/include/libxml/entities.h \
+		../../../lib/src/libxml2/include/libxml/encoding.h \
+		../../../lib/src/libxml2/include/libxml/xmlIO.h \
+		../../../lib/src/libxml2/include/libxml/SAX.h \
+		../../../lib/src/libxml2/include/libxml/xlink.h \
+		../../../lib/src/libxml2/include/libxml/SAX2.h \
+		../../../lib/src/libxml2/include/libxml/xmlwriter.h \
+		../../../lib/src/libxml2/include/libxml/xmlsave.h \
+		../../../src/ATCore/utils/helpers.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/QString \
 		/Qt/5.11.2/gcc_64/include/QtXml/QDomDocument \
 		/Qt/5.11.2/gcc_64/include/QtXml/qdom.h \
 		/Qt/5.11.2/gcc_64/include/QtXml/qtxmlglobal.h \
 		/Qt/5.11.2/gcc_64/include/QtXml/qtxml-config.h \
+		../../../src/ATProject/ADocumentRef.h \
+		../../../src/ATGUI/config.h \
 		mainwidget.h \
 		moc_predefs.h \
 		/Qt/5.11.2/gcc_64/bin/moc
-	/Qt/5.11.2/gcc_64/bin/moc $(DEFINES) --include /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/moc_predefs.h -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++ -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/src -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src/libxml2/include -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src/libiconv/include -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtXml -I/Qt/5.11.2/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include mainwidget.h -o moc_mainwidget.cpp
+	/Qt/5.11.2/gcc_64/bin/moc $(DEFINES) --include /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/moc_predefs.h -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++ -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/src -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src/libxml2/include -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtXml -I/Qt/5.11.2/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include mainwidget.h -o moc_mainwidget.cpp
 
 moc_windowres.cpp: /Qt/5.11.2/gcc_64/include/QtWidgets/QDialog \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qdialog.h \
@@ -954,6 +983,33 @@ moc_windowres.cpp: /Qt/5.11.2/gcc_64/include/QtWidgets/QDialog \
 		/Qt/5.11.2/gcc_64/include/QtGui/qtouchdevice.h \
 		verifier.h \
 		../../../src/libs/KnowledgeField/knowledge_field_t.h \
+		../../../src/ATCore/utils/xml_helpers.h \
+		../../../src/ATCore/config.h \
+		../../../src/global_conf.h \
+		../../../lib/src/libxml2/include/libxml/tree.h \
+		../../../lib/src/libxml2/include/libxml/xmlversion.h \
+		../../../lib/src/libxml2/include/libxml/xmlexports.h \
+		../../../lib/src/libxml2/include/libxml/xmlstring.h \
+		../../../lib/src/libxml2/include/libxml/xmlregexp.h \
+		../../../lib/src/libxml2/include/libxml/dict.h \
+		../../../lib/src/libxml2/include/libxml/xmlmemory.h \
+		../../../lib/src/libxml2/include/libxml/threads.h \
+		../../../lib/src/libxml2/include/libxml/globals.h \
+		../../../lib/src/libxml2/include/libxml/parser.h \
+		../../../lib/src/libxml2/include/libxml/hash.h \
+		../../../lib/src/libxml2/include/libxml/valid.h \
+		../../../lib/src/libxml2/include/libxml/xmlerror.h \
+		../../../lib/src/libxml2/include/libxml/list.h \
+		../../../lib/src/libxml2/include/libxml/xmlautomata.h \
+		../../../lib/src/libxml2/include/libxml/entities.h \
+		../../../lib/src/libxml2/include/libxml/encoding.h \
+		../../../lib/src/libxml2/include/libxml/xmlIO.h \
+		../../../lib/src/libxml2/include/libxml/SAX.h \
+		../../../lib/src/libxml2/include/libxml/xlink.h \
+		../../../lib/src/libxml2/include/libxml/SAX2.h \
+		../../../lib/src/libxml2/include/libxml/xmlwriter.h \
+		../../../lib/src/libxml2/include/libxml/xmlsave.h \
+		../../../src/ATCore/utils/helpers.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/QString \
 		/Qt/5.11.2/gcc_64/include/QtXml/QDomDocument \
 		/Qt/5.11.2/gcc_64/include/QtXml/qdom.h \
@@ -962,7 +1018,7 @@ moc_windowres.cpp: /Qt/5.11.2/gcc_64/include/QtWidgets/QDialog \
 		windowres.h \
 		moc_predefs.h \
 		/Qt/5.11.2/gcc_64/bin/moc
-	/Qt/5.11.2/gcc_64/bin/moc $(DEFINES) --include /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/moc_predefs.h -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++ -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/src -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src/libxml2/include -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src/libiconv/include -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtXml -I/Qt/5.11.2/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include windowres.h -o moc_windowres.cpp
+	/Qt/5.11.2/gcc_64/bin/moc $(DEFINES) --include /home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier/moc_predefs.h -I/Qt/5.11.2/gcc_64/mkspecs/linux-g++ -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KFVerifier -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/src -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src -I/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/lib/src/libxml2/include -I/Qt/5.11.2/gcc_64/include -I/Qt/5.11.2/gcc_64/include/QtWidgets -I/Qt/5.11.2/gcc_64/include/QtGui -I/Qt/5.11.2/gcc_64/include/QtSql -I/Qt/5.11.2/gcc_64/include/QtXml -I/Qt/5.11.2/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include windowres.h -o moc_windowres.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1017,6 +1073,31 @@ kfverifier.o: kfverifier.cpp kfverifier.h \
 		../../../src/global_conf.h \
 		../../../src/ATCore/AError.h \
 		../../../src/ATCore/ASingleton.h \
+		../../../src/edfd_cover/APlan.h \
+		../../../src/ATCore/ANamedObject.h \
+		../../../src/ATCore/edfd/DFDElement.h \
+		../../../src/ATCore/config.h \
+		../../../src/ATCore/utils/geometry.h \
+		../../../src/planner_core/core/algorithm/graph.h \
+		../../../src/planner_core/core/io/streamer.h \
+		../../../src/ATCore/feature_tree.h \
+		../../../src/ATCore/check.h \
+		../../../src/ATCore/utils/helpers.h \
+		../../../src/ATCore/simple_tree.h \
+		../../../src/ATPlanner/ATPlanner.h \
+		../../../src/ATCore/ADelegatedObject.h \
+		../../../src/ATProject/ADocumentRef.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/QString \
+		/Qt/5.11.2/gcc_64/include/QtCore/qstring.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qchar.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qbytearray.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qrefcount.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qnamespace.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qarraydata.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qstringliteral.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qstringalgorithms.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qstringview.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qstringbuilder.h \
 		mainwidget.h \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/QWidget \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qwidget.h \
@@ -1026,19 +1107,9 @@ kfverifier.o: kfverifier.cpp kfverifier.h \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
 		/Qt/5.11.2/gcc_64/include/QtGui/qwindowdefs.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/qobjectdefs.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qnamespace.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
 		/Qt/5.11.2/gcc_64/include/QtGui/qwindowdefs_win.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/qobject.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qstring.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qchar.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qbytearray.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qrefcount.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qarraydata.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qstringliteral.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qstringalgorithms.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qstringview.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/qstringbuilder.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/qlist.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/qalgorithms.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/qiterator.h \
@@ -1102,7 +1173,30 @@ kfverifier.o: kfverifier.cpp kfverifier.h \
 		/Qt/5.11.2/gcc_64/include/QtGui/qtouchdevice.h \
 		verifier.h \
 		../../../src/libs/KnowledgeField/knowledge_field_t.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/QString \
+		../../../src/ATCore/utils/xml_helpers.h \
+		../../../lib/src/libxml2/include/libxml/tree.h \
+		../../../lib/src/libxml2/include/libxml/xmlversion.h \
+		../../../lib/src/libxml2/include/libxml/xmlexports.h \
+		../../../lib/src/libxml2/include/libxml/xmlstring.h \
+		../../../lib/src/libxml2/include/libxml/xmlregexp.h \
+		../../../lib/src/libxml2/include/libxml/dict.h \
+		../../../lib/src/libxml2/include/libxml/xmlmemory.h \
+		../../../lib/src/libxml2/include/libxml/threads.h \
+		../../../lib/src/libxml2/include/libxml/globals.h \
+		../../../lib/src/libxml2/include/libxml/parser.h \
+		../../../lib/src/libxml2/include/libxml/hash.h \
+		../../../lib/src/libxml2/include/libxml/valid.h \
+		../../../lib/src/libxml2/include/libxml/xmlerror.h \
+		../../../lib/src/libxml2/include/libxml/list.h \
+		../../../lib/src/libxml2/include/libxml/xmlautomata.h \
+		../../../lib/src/libxml2/include/libxml/entities.h \
+		../../../lib/src/libxml2/include/libxml/encoding.h \
+		../../../lib/src/libxml2/include/libxml/xmlIO.h \
+		../../../lib/src/libxml2/include/libxml/SAX.h \
+		../../../lib/src/libxml2/include/libxml/xlink.h \
+		../../../lib/src/libxml2/include/libxml/SAX2.h \
+		../../../lib/src/libxml2/include/libxml/xmlwriter.h \
+		../../../lib/src/libxml2/include/libxml/xmlsave.h \
 		/Qt/5.11.2/gcc_64/include/QtXml/QDomDocument \
 		/Qt/5.11.2/gcc_64/include/QtXml/qdom.h \
 		/Qt/5.11.2/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -1112,12 +1206,11 @@ kfverifier.o: kfverifier.cpp kfverifier.h \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qmainwindow.h \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qtabwidget.h \
 		/Qt/5.11.2/gcc_64/include/QtGui/qicon.h \
-		../../../src/ATProject/ADocumentRef.h \
-		../../../src/ATCore/check.h \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/QLabel \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qlabel.h \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qframe.h \
-		/Qt/5.11.2/gcc_64/include/QtCore/QFile
+		/Qt/5.11.2/gcc_64/include/QtCore/QFile \
+		/Qt/5.11.2/gcc_64/include/QtCore/QTextStream
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o kfverifier.o kfverifier.cpp
 
 mainwidget.o: mainwidget.cpp mainwidget.h \
@@ -1226,12 +1319,90 @@ mainwidget.o: mainwidget.cpp mainwidget.h \
 		/Qt/5.11.2/gcc_64/include/QtGui/qtouchdevice.h \
 		verifier.h \
 		../../../src/libs/KnowledgeField/knowledge_field_t.h \
+		../../../src/ATCore/utils/xml_helpers.h \
+		../../../src/ATCore/config.h \
+		../../../src/global_conf.h \
+		../../../lib/src/libxml2/include/libxml/tree.h \
+		../../../lib/src/libxml2/include/libxml/xmlversion.h \
+		../../../lib/src/libxml2/include/libxml/xmlexports.h \
+		../../../lib/src/libxml2/include/libxml/xmlstring.h \
+		../../../lib/src/libxml2/include/libxml/xmlregexp.h \
+		../../../lib/src/libxml2/include/libxml/dict.h \
+		../../../lib/src/libxml2/include/libxml/xmlmemory.h \
+		../../../lib/src/libxml2/include/libxml/threads.h \
+		../../../lib/src/libxml2/include/libxml/globals.h \
+		../../../lib/src/libxml2/include/libxml/parser.h \
+		../../../lib/src/libxml2/include/libxml/hash.h \
+		../../../lib/src/libxml2/include/libxml/valid.h \
+		../../../lib/src/libxml2/include/libxml/xmlerror.h \
+		../../../lib/src/libxml2/include/libxml/list.h \
+		../../../lib/src/libxml2/include/libxml/xmlautomata.h \
+		../../../lib/src/libxml2/include/libxml/entities.h \
+		../../../lib/src/libxml2/include/libxml/encoding.h \
+		../../../lib/src/libxml2/include/libxml/xmlIO.h \
+		../../../lib/src/libxml2/include/libxml/SAX.h \
+		../../../lib/src/libxml2/include/libxml/xlink.h \
+		../../../lib/src/libxml2/include/libxml/SAX2.h \
+		../../../lib/src/libxml2/include/libxml/xmlwriter.h \
+		../../../lib/src/libxml2/include/libxml/xmlsave.h \
+		../../../src/ATCore/utils/helpers.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/QString \
 		/Qt/5.11.2/gcc_64/include/QtXml/QDomDocument \
 		/Qt/5.11.2/gcc_64/include/QtXml/qdom.h \
 		/Qt/5.11.2/gcc_64/include/QtXml/qtxmlglobal.h \
 		/Qt/5.11.2/gcc_64/include/QtXml/qtxml-config.h \
+		../../../src/ATProject/ADocumentRef.h \
+		../../../src/ATGUI/config.h \
 		ui_mainwidget.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/QVariant \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QApplication \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qapplication.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qcoreapplication.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qeventloop.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qguiapplication.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qinputmethod.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QCheckBox \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qcheckbox.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qicon.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QComboBox \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qcombobox.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qstyleoption.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qvalidator.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qregularexpression.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qslider.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractslider.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qstyle.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtabbar.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtabwidget.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qrubberband.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qframe.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QFrame \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QGroupBox \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qgroupbox.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QHBoxLayout \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qboxlayout.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qlayout.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qgridlayout.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QLabel \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qlabel.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QPushButton \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qpushbutton.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QTextBrowser \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtextbrowser.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtextedit.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextdocument.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextoption.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextcursor.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextformat.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qpen.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QVBoxLayout \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/QMessageBox \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qmessagebox.h \
 		/Qt/5.11.2/gcc_64/include/QtWidgets/qdialog.h \
@@ -1242,6 +1413,33 @@ mainwidget.o: mainwidget.cpp mainwidget.h \
 
 verifier.o: verifier.cpp verifier.h \
 		../../../src/libs/KnowledgeField/knowledge_field_t.h \
+		../../../src/ATCore/utils/xml_helpers.h \
+		../../../src/ATCore/config.h \
+		../../../src/global_conf.h \
+		../../../lib/src/libxml2/include/libxml/tree.h \
+		../../../lib/src/libxml2/include/libxml/xmlversion.h \
+		../../../lib/src/libxml2/include/libxml/xmlexports.h \
+		../../../lib/src/libxml2/include/libxml/xmlstring.h \
+		../../../lib/src/libxml2/include/libxml/xmlregexp.h \
+		../../../lib/src/libxml2/include/libxml/dict.h \
+		../../../lib/src/libxml2/include/libxml/xmlmemory.h \
+		../../../lib/src/libxml2/include/libxml/threads.h \
+		../../../lib/src/libxml2/include/libxml/globals.h \
+		../../../lib/src/libxml2/include/libxml/parser.h \
+		../../../lib/src/libxml2/include/libxml/hash.h \
+		../../../lib/src/libxml2/include/libxml/valid.h \
+		../../../lib/src/libxml2/include/libxml/xmlerror.h \
+		../../../lib/src/libxml2/include/libxml/list.h \
+		../../../lib/src/libxml2/include/libxml/xmlautomata.h \
+		../../../lib/src/libxml2/include/libxml/entities.h \
+		../../../lib/src/libxml2/include/libxml/encoding.h \
+		../../../lib/src/libxml2/include/libxml/xmlIO.h \
+		../../../lib/src/libxml2/include/libxml/SAX.h \
+		../../../lib/src/libxml2/include/libxml/xlink.h \
+		../../../lib/src/libxml2/include/libxml/SAX2.h \
+		../../../lib/src/libxml2/include/libxml/xmlwriter.h \
+		../../../lib/src/libxml2/include/libxml/xmlsave.h \
+		../../../src/ATCore/utils/helpers.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/QString \
 		/Qt/5.11.2/gcc_64/include/QtCore/qstring.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/qchar.h \
@@ -1428,16 +1626,120 @@ windowres.o: windowres.cpp windowres.h \
 		/Qt/5.11.2/gcc_64/include/QtGui/qtouchdevice.h \
 		verifier.h \
 		../../../src/libs/KnowledgeField/knowledge_field_t.h \
+		../../../src/ATCore/utils/xml_helpers.h \
+		../../../src/ATCore/config.h \
+		../../../src/global_conf.h \
+		../../../lib/src/libxml2/include/libxml/tree.h \
+		../../../lib/src/libxml2/include/libxml/xmlversion.h \
+		../../../lib/src/libxml2/include/libxml/xmlexports.h \
+		../../../lib/src/libxml2/include/libxml/xmlstring.h \
+		../../../lib/src/libxml2/include/libxml/xmlregexp.h \
+		../../../lib/src/libxml2/include/libxml/dict.h \
+		../../../lib/src/libxml2/include/libxml/xmlmemory.h \
+		../../../lib/src/libxml2/include/libxml/threads.h \
+		../../../lib/src/libxml2/include/libxml/globals.h \
+		../../../lib/src/libxml2/include/libxml/parser.h \
+		../../../lib/src/libxml2/include/libxml/hash.h \
+		../../../lib/src/libxml2/include/libxml/valid.h \
+		../../../lib/src/libxml2/include/libxml/xmlerror.h \
+		../../../lib/src/libxml2/include/libxml/list.h \
+		../../../lib/src/libxml2/include/libxml/xmlautomata.h \
+		../../../lib/src/libxml2/include/libxml/entities.h \
+		../../../lib/src/libxml2/include/libxml/encoding.h \
+		../../../lib/src/libxml2/include/libxml/xmlIO.h \
+		../../../lib/src/libxml2/include/libxml/SAX.h \
+		../../../lib/src/libxml2/include/libxml/xlink.h \
+		../../../lib/src/libxml2/include/libxml/SAX2.h \
+		../../../lib/src/libxml2/include/libxml/xmlwriter.h \
+		../../../lib/src/libxml2/include/libxml/xmlsave.h \
+		../../../src/ATCore/utils/helpers.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/QString \
 		/Qt/5.11.2/gcc_64/include/QtXml/QDomDocument \
 		/Qt/5.11.2/gcc_64/include/QtXml/qdom.h \
 		/Qt/5.11.2/gcc_64/include/QtXml/qtxmlglobal.h \
 		/Qt/5.11.2/gcc_64/include/QtXml/qtxml-config.h \
-		ui_windowres.h
+		ui_windowres.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/QVariant \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QApplication \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qapplication.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qcoreapplication.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qeventloop.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qguiapplication.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qinputmethod.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QGroupBox \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qgroupbox.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qframe.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QHeaderView \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qheaderview.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qstyleoption.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qvalidator.h \
+		/Qt/5.11.2/gcc_64/include/QtCore/qregularexpression.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qicon.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qslider.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractslider.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qstyle.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtabbar.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtabwidget.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qrubberband.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QLabel \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qlabel.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QListWidget \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qlistwidget.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qlistview.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QPushButton \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qpushbutton.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QTabWidget \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QTableWidget \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtablewidget.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtableview.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QTextBrowser \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtextbrowser.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/qtextedit.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextdocument.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextoption.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextcursor.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qtextformat.h \
+		/Qt/5.11.2/gcc_64/include/QtGui/qpen.h \
+		/Qt/5.11.2/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o windowres.o windowres.cpp
 
 test_kf.o: test_kf.cpp test_kf.h \
 		../../../src/libs/KnowledgeField/knowledge_field_t.h \
+		../../../src/ATCore/utils/xml_helpers.h \
+		../../../src/ATCore/config.h \
+		../../../src/global_conf.h \
+		../../../lib/src/libxml2/include/libxml/tree.h \
+		../../../lib/src/libxml2/include/libxml/xmlversion.h \
+		../../../lib/src/libxml2/include/libxml/xmlexports.h \
+		../../../lib/src/libxml2/include/libxml/xmlstring.h \
+		../../../lib/src/libxml2/include/libxml/xmlregexp.h \
+		../../../lib/src/libxml2/include/libxml/dict.h \
+		../../../lib/src/libxml2/include/libxml/xmlmemory.h \
+		../../../lib/src/libxml2/include/libxml/threads.h \
+		../../../lib/src/libxml2/include/libxml/globals.h \
+		../../../lib/src/libxml2/include/libxml/parser.h \
+		../../../lib/src/libxml2/include/libxml/hash.h \
+		../../../lib/src/libxml2/include/libxml/valid.h \
+		../../../lib/src/libxml2/include/libxml/xmlerror.h \
+		../../../lib/src/libxml2/include/libxml/list.h \
+		../../../lib/src/libxml2/include/libxml/xmlautomata.h \
+		../../../lib/src/libxml2/include/libxml/entities.h \
+		../../../lib/src/libxml2/include/libxml/encoding.h \
+		../../../lib/src/libxml2/include/libxml/xmlIO.h \
+		../../../lib/src/libxml2/include/libxml/SAX.h \
+		../../../lib/src/libxml2/include/libxml/xlink.h \
+		../../../lib/src/libxml2/include/libxml/SAX2.h \
+		../../../lib/src/libxml2/include/libxml/xmlwriter.h \
+		../../../lib/src/libxml2/include/libxml/xmlsave.h \
+		../../../src/ATCore/utils/helpers.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/QString \
 		/Qt/5.11.2/gcc_64/include/QtCore/qstring.h \
 		/Qt/5.11.2/gcc_64/include/QtCore/qchar.h \

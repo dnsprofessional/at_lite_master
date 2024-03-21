@@ -6,6 +6,9 @@
 #include <map>
 #include <set>
 #include <iostream>
+#include <ATCore/utils/xml_helpers.h>
+#include <ATCore/utils/helpers.h>
+#include <QString>
 
 using std::vector;
 using std::string;
@@ -750,6 +753,40 @@ private:
 	int number_to = 100000;
 
 public:
+    static std::string xmlDocToString(xmlDoc* doc) {
+        xmlChar *s;
+        int size;
+        std::string out;
+        xmlDocDumpMemory(doc, &s, &size);
+        if (s == nullptr)
+            throw std::bad_alloc();
+        try {
+            out = (char *)s;
+            return out;
+        } catch (...) {
+            xmlFree(s);
+            throw;
+        }
+    }
+
+    static xmlDoc * findKfFragment(xmlDoc* kf_doc, std::string name) {
+        xmlDoc* result = new xmlDoc();
+
+        xmlNode* all_fragments = kf_doc->children;
+        xmlNode* found = all_fragments->children;
+        while (found != nullptr) {
+            string prop_str = "fragment_name";
+            const xmlChar* prop = (const xmlChar*)prop_str.c_str();
+            xmlChar* title = xmlGetProp(found, prop);
+            char * title_s = (char *)title;
+            if (QString::fromStdString(title_s) == QString::fromStdString(name)){
+                result->children = found;
+                return result;
+            }
+        }
+        return nullptr;
+    }
+
     map<string, int> get_type_ids() const {
         return type_ids;
     };
@@ -840,6 +877,7 @@ public:
 	void load_types(std::istream& in);
 
 	string to_xml() const;
+        string to_xml(const string& fragment_name, bool as_doc) const;
 	string objects_to_xml() const;
 	string intervals_to_xml() const;
 	string events_to_xml() const;

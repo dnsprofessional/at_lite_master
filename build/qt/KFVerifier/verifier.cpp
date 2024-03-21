@@ -1397,6 +1397,114 @@ void verifier::writeToFile(QString filename)
 
 }
 
+knowledge_field_t* verifier::readFromXml(xmlDoc* kf_doc) {
+    knowledge_field_t* kf_t = new knowledge_field_t();
+    QDomDocument document;
+    string xml_text = knowledge_field_t::xmlDocToString(kf_doc);
+    QString content = QString::fromStdString(xml_text);
+    if(!document.setContent(content))
+    {
+        std::cout << "Failed to load the file for reading."<< '\n';
+        return nullptr;
+    }
+
+    QDomElement root = document.firstChildElement();
+    QDomNodeList types = root.elementsByTagName("types");
+    for(int i = 0; i < types.count(); i++)
+    {
+        QDomNode nodtypes = types.at(i);
+        QDomElement type = nodtypes.toElement();
+        QDomNodeList litype = root.elementsByTagName("type");
+        for(int i = 0; i < litype.count(); i++)
+        {
+        QDomNode nodtype = litype.at(i);
+        if(nodtype.isElement())
+        {
+            QDomElement type = nodtype.toElement();
+            readTypeFromFile(type, kf_t);
+        }
+            //std::cout << '\t' << e.attribute(att).toStdString() << '\n';
+        }
+    }
+    std::cout << '\n';
+    std::cout << kf_t->types_to_string();
+    std::cout << '\n';
+    QDomNodeList objects = root.elementsByTagName("classes");
+    QDomNodeList liobject;
+    for(int i = 0; i < objects.count(); i++)
+    {
+        QDomNode nodobjects = objects.at(i);
+        QDomElement object = nodobjects.toElement();
+        liobject = object.elementsByTagName("class");
+        for(int i = 0; i < liobject.count(); i++)
+        {
+        QDomNode nodobject = liobject.at(i);
+        if(nodobject.isElement())
+        {
+            QDomElement object = nodobject.toElement();
+            readObjectFromFile(object, kf_t);
+        }
+            //std::cout << '\t' << e.attribute(att).toStdString() << '\n';
+        }
+    }
+    std::cout << '\n';
+    std::cout << kf_t->objects_to_string();
+    std::cout << '\n';
+
+    QDomNodeList events = root.elementsByTagName("IntervalsAndEvents").at(0).toElement().elementsByTagName("Events");
+    //std::cout << "\tQUACK! events num is " << events.count();
+    QDomNodeList lievent = events.at(0).toElement().elementsByTagName("Event");
+    //std::cout << "\tQUACK! event num is " << lievent.count();
+    for(int i = 0; i < lievent.count(); i++)
+    {
+        QDomNode nodevent = lievent.at(i);
+        if(nodevent.isElement())
+        {
+            QDomElement event = nodevent.toElement();
+            readEventFromFile(event, kf_t);
+        }
+        //std::cout << '\t' << e.attribute(att).toStdString() << '\n';
+    }
+    std::cout << '\n';
+    std::cout << kf_t->events_to_string();
+    std::cout << '\n';
+
+    QDomNodeList intervals = root.elementsByTagName("IntervalsAndEvents").at(0).toElement().elementsByTagName("Intervals");
+    //std::cout << "\tQUACK! events num is " << events.count();
+    QDomNodeList liinterval = intervals.at(0).toElement().elementsByTagName("Interval");
+    //std::cout << "\tQUACK! event num is " << lievent.count();
+    for(int i = 0; i < liinterval.count(); i++)
+    {
+        QDomNode nodinterval = liinterval.at(i);
+        if(nodinterval.isElement())
+        {
+            QDomElement interval = nodinterval.toElement();
+            readIntervalFromFile(interval,kf_t);
+        }
+        //std::cout << '\t' << e.attribute(att).toStdString() << '\n';
+    }
+    std::cout << '\n';
+    std::cout << kf_t->intervals_to_string();
+    std::cout << '\n';
+
+    QDomNodeList rules = liobject.at(liobject.count()-1).toElement().elementsByTagName("rules");
+    QDomNodeList lirule = rules.at(0).toElement().elementsByTagName("rule");
+    for(int i = 0; i < lirule.count(); i++)
+    {
+        QDomNode nodrule = lirule.at(i);
+        if(nodrule.isElement())
+        {
+            QDomElement rule = nodrule.toElement();
+            readRuleFromFile(rule,kf_t);
+        }
+        //std::cout << '\t' << e.attribute(att).toStdString() << '\n';
+    }
+    std::cout << '\n';
+    //std::cout << kf_t->rules_to_string();
+    //std::cout << '\n';
+    return kf_t;
+}
+
 knowledge_field_t* verifier::readFromFile(QString filename) {
 
     knowledge_field_t* kf_t = new knowledge_field_t();

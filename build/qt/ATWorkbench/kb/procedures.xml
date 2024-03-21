@@ -197,7 +197,9 @@
               </nodes>
               <documents>
                 <document id="0" name="База Данных" extension="db"/>
-                <document id="1" name="Фрагмент Поля Знаний" extension="json"/>
+                <document id="1" name="Фрагменты поля знаний (внутреннее представление)" extension="xml"/>
+                <document id="2" name="Верифицированные фрагменты поля знаний (вн. п)" extension="xml"/>
+                <document id="3" name="База знаний" extension="kbs"/>
               </documents>
             </fragment>
             <fragment id="1" name="Интеграция с ППП" primary="0">
@@ -226,13 +228,25 @@
         </fragments>
         <network>
             <task id="0" fragment_id="0" name="Приобретение знаний" stage="Анализ системных требований" executor="KMPZ">
+              <input>
+                <document id="1"/>
+              </input>
+              <output>
+                <document id="1"/>
+              </output>
               <!--><output>
                 <document id="4"/>
                 <document id="0"/>
               </output></!-->
             </task>
             <task id="1" fragment_id="0" name="Верификация ПЗ" stage="Анализ системных требований" executor="KFVerifier">
-              
+              <input>
+                <document id="1"/>
+              </input>
+              <output>
+                <document id="2"/>
+                <document id="3"/>
+              </output>
               <!--><input>
                 <document id="0"/>
               </input>

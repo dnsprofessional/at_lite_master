@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "verifier.h"
+#include <ATProject/ADocumentRef.h>
 
 
 namespace Ui {
@@ -14,8 +15,12 @@ class MainWidget : public QWidget
     Q_OBJECT
 
 public:
-    explicit MainWidget(QWidget *parent = nullptr);
+    explicit MainWidget(QWidget *parent = nullptr, ADocumentRef* kf_frags = nullptr);
     ~MainWidget();
+
+    ADocumentRef* kf_fragments = nullptr;
+    ADocumentRef* verified_fragments = nullptr;
+    ADocumentRef* kb_doc = nullptr;
 
 private slots:
     void on_verifyButton_clicked();

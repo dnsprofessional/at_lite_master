@@ -44,7 +44,7 @@ unix {
     INSTALLS += target
 }
 
-INCLUDEPATH +=  ../../../src ../../../lib/src ../../../lib/src/libxml2/include ../../../lib/src/libiconv/include
+INCLUDEPATH +=  ../../../src ../../../lib/src ../../../lib/src/libxml2/include
 
 LIBS += -L$$OUT_PWD/../ATProject/ -lATProject
 

@@ -1379,6 +1379,29 @@ string knowledge_field_t::to_xml() const {
     return res;
 }
 
+string knowledge_field_t::to_xml(const string& fragment_name, bool as_doc) const {
+    string res = "";
+    if (as_doc) {
+        res += "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
+    }
+    res += "<knowledge-base fragment_name=\""+fragment_name+"\">\n";
+    res += types_to_xml();
+    res += "<classes>\n";
+    res += objects_to_xml();
+    res += rules_to_xml();
+    res += "</class>\n";
+    res += "</classes>\n";
+
+    res += "\n\n\n";
+    res += "<IntervalsAndEvents>\n";
+    res += intervals_to_xml();
+    res += events_to_xml();
+    res += "</IntervalsAndEvents>\n";
+
+    res += "</knowledge-base>";
+    return res;
+}
+
 string knowledge_field_t::types_to_xml() const {
     string res = "";
     res += "<types>\n";
