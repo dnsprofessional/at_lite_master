@@ -191,9 +191,11 @@ APlan* fillPlan(AProject* proj, const SDP_to_fragments_t& used_fragments, const 
         const PlannerSDPRepresentation* planner_sdp = get<0>(sdp_with_id);
         const SDP& sdp = planner_sdp->getOriginalSDP();
         const string sdp_instance_name = get<2>(sdp_with_id) + "(" + sdp.name() + ")" + (get<1>(sdp_with_id) > 0 ? "[" + std::to_string(get<1>(sdp_with_id)) + "]" : "");
+        int sdp_tag = 0;
         for (const typename SDP_to_fragments_t::value_type& it : used_fragments)
         {
             //all dependencies between tasks should be managed within one group
+            sdp_tag++;
             if (used_sdps[it.first] == sdp_with_id)
             {
                 std::cout << "Used fragment " << it.second << " of SDP " << sdp_instance_name << endl;
@@ -202,7 +204,7 @@ APlan* fillPlan(AProject* proj, const SDP_to_fragments_t& used_fragments, const 
                 const SDP::Fragment& frag = sdp.find_fragment(it.second);
                 for (const auto& doc_desc : frag.documents)
                 {
-                    ADocumentRef* doc_ref = proj->generateRef(doc_desc.second.extension);
+                    ADocumentRef* doc_ref = proj->generateRef(QString::fromStdString(doc_desc.second.extension), QString::number(doc_desc.second.id), QString::number(sdp_tag));
                     docs.emplace(doc_desc.first, doc_ref);
                 }
 

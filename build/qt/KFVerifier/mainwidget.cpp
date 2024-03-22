@@ -3,6 +3,7 @@
 #include <iostream>
 #include <QMessageBox>
 #include <QDialog>
+#include <QDebug>
 #include "windowres.h"
 #include <ATProject/ADocumentRef.h>
 #include <ATCore/utils/xml_helpers.h>
@@ -20,12 +21,24 @@ MainWidget::MainWidget(QWidget *parent, ADocumentRef* kf_frags) :
     QStringList fragments_titles;
     this->kf_fragments = kf_frags;
     xmlDoc * kf_doc = xmlReadFile(this->kf_fragments->absolutePath().toStdString().c_str(), 0, 0);
-    xmlNode all_fragments = kf_doc->children[0];
 
-    xmlNode* fragment = all_fragments.children;
+    string loaded_xml = knowledge_field_t::xmlDocToString(kf_doc);
+
+    qDebug() << "loaded xml to verify\n\n";
+    qDebug() << QString::fromStdString(loaded_xml);
+
+    xmlNode * all_fragments = kf_doc->children;
+
+    xmlNode* fragment = all_fragments->children;
     if (fragment != nullptr) {
-        xmlDoc * fragment_doc = new xmlDoc();
-        fragment_doc->children = fragment;
+        xmlDoc * fragment_doc = xmlNewDoc(BAD_CAST "1.0");;
+        xmlDocSetRootElement(fragment_doc, fragment);
+
+        string selected_xml = knowledge_field_t::xmlDocToString(fragment_doc);
+
+        qDebug() << "selecting first xml to verify\n\n";
+        qDebug() << QString::fromStdString(selected_xml);
+
         ver->set_kf(ver->readFromXml(fragment_doc));
     }
     while (fragment != nullptr) {

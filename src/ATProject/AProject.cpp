@@ -310,6 +310,18 @@ ADocumentRef * AProject::generateRef(const QString & extension)
 	return new_ref;
 }
 
+ADocumentRef * AProject::generateRef(const QString & extension, const QString & id, const QString & sdp_tag)
+{
+    QString rel_path;
+    QFileInfo fi;
+
+    rel_path = QString("document_%1_%2.%3").arg(sdp_tag).arg(id).arg(extension);
+
+    auto new_ref = new ADocumentRef(this);
+    new_ref->relativePath = rel_path;
+    return new_ref;
+}
+
 void AProject::foreach_doc(const QString & extension, std::function<void(ADocumentRef*)> fun)
 {
 	for (auto ref : documents)

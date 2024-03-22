@@ -1438,13 +1438,13 @@ knowledge_field_t* verifier::readFromXml(xmlDoc* kf_doc) {
         liobject = object.elementsByTagName("class");
         for(int i = 0; i < liobject.count(); i++)
         {
-        QDomNode nodobject = liobject.at(i);
-        if(nodobject.isElement())
-        {
-            QDomElement object = nodobject.toElement();
-            readObjectFromFile(object, kf_t);
-        }
-            //std::cout << '\t' << e.attribute(att).toStdString() << '\n';
+            QDomNode nodobject = liobject.at(i);
+            if(nodobject.isElement())
+            {
+                QDomElement object = nodobject.toElement();
+                readObjectFromFile(object, kf_t);
+            }
+                //std::cout << '\t' << e.attribute(att).toStdString() << '\n';
         }
     }
     std::cout << '\n';
@@ -1682,21 +1682,25 @@ void verifier::readObjectFromFile(QDomElement object, knowledge_field_t* kf) {
             QDomNode nodproperty = liproperty.at(i);
             if(nodproperty.isElement())
             {
-                temporal_object_t* object_t1 = (temporal_object_t*)kf->add_object(nodproperty.toElement().attribute("id").toStdString());
-                std::cout << '\t' << nodproperty.toElement().attribute("id").toStdString();
+                temporal_object_t* object_t1 = (temporal_object_t*)kf->get_object(nodproperty.toElement().attribute("id").toStdString());
+                if (object_t1 == nullptr) {
+                    string new_name = nodproperty.toElement().attribute("id").toStdString();
+                    object_t1 = (temporal_object_t*)kf->add_object(new_name);
+                    std::cout << '\t' << nodproperty.toElement().attribute("id").toStdString();
 
-                temporal_object_t* object_t2 = (temporal_object_t*)kf->get_object(nodproperty.toElement().attribute("type").toStdString());
-                std::cout << '\t' << nodproperty.toElement().attribute("type").toStdString();
+                    temporal_object_t* object_t2 = (temporal_object_t*)kf->get_object(nodproperty.toElement().attribute("type").toStdString());
+                    std::cout << '\t' << nodproperty.toElement().attribute("type").toStdString();
 
-                std::cout << '\t' << nodproperty.toElement().attribute("desc").toStdString() << '\n';
+                    std::cout << '\t' << nodproperty.toElement().attribute("desc").toStdString() << '\n';
 
-                int num_of_attrs = object_t2->get_number_of_attrs();
-                for (int j = 0; j < num_of_attrs; ++j) {
-                    string str_attr = object_t2->get_attr_name_by_id(j);
-                    string str_type = object_t2->get_attr_type_by_id(j);
-                    std::cout << "\t\t" << str_attr << "\t" << str_type << "\n";
+                    int num_of_attrs = object_t2->get_number_of_attrs();
+                    for (int j = 0; j < num_of_attrs; ++j) {
+                        string str_attr = object_t2->get_attr_name_by_id(j);
+                        string str_type = object_t2->get_attr_type_by_id(j);
+                        std::cout << "\t\t" << str_attr << "\t" << str_type << "\n";
 
-                    kf->add_attr(object_t1,str_attr,str_type);
+                        kf->add_attr(object_t1,str_attr,str_type);
+                    }
                 }
                 //std::cout << "\n";
                 //kf->add_attr(object_t,nodproperty.toElement().attribute("id").toStdString(),nodproperty.toElement().attribute("type").toStdString());

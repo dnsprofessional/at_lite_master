@@ -159,8 +159,9 @@ void temporal_interval_t::set_duration_condition(condition_t* duration) {
 }
 
 const temporal_entity_t* knowledge_field_t::add_object(const string& name) {
-    if (mp_objects.find(name) != mp_objects.end())
-        return nullptr;
+    auto found = mp_objects.find(name);
+    if (found != mp_objects.end())
+        return found->second;
 
     int cid = objects.size();
     objects.push_back(new temporal_object_t(cid));

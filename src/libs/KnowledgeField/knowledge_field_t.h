@@ -770,7 +770,7 @@ public:
     }
 
     static xmlDoc * findKfFragment(xmlDoc* kf_doc, std::string name) {
-        xmlDoc* result = new xmlDoc();
+        xmlDoc* result = xmlNewDoc(BAD_CAST "1.0");
 
         xmlNode* all_fragments = kf_doc->children;
         xmlNode* found = all_fragments->children;
@@ -780,7 +780,7 @@ public:
             xmlChar* title = xmlGetProp(found, prop);
             char * title_s = (char *)title;
             if (QString::fromStdString(title_s) == QString::fromStdString(name)){
-                result->children = found;
+                xmlDocSetRootElement(result, found);
                 return result;
             }
         }

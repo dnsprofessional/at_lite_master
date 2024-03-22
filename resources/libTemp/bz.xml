@@ -6,12 +6,12 @@
 <to>100000</to>
 </type>
 <type id="ТИП4" meta="string" desc="string">
-<value>fh</value>
+<value>dfghfg</value>
 </type>
 <type id="ТИП3" meta="string" desc="string">
 </type>
 <type id="ТИП2" meta="string" desc="string">
-<value>fghjj</value>
+<value>jhghj</value>
 </type>
 </types>
 <classes>
@@ -33,14 +33,14 @@
 <ref id="Пациент">
 <ref id="Атрибут3"/>
 </ref>
-<value>fh</value>
+<value>dfghfg</value>
 </eq>
 </condition>
 <action>
 <assign>
 <ref id="Пациент">
 <ref id="Атрибут1"/>
-</ref><value>fghjj</value>
+</ref><value>jhghj</value>
 <with belief="50" probability="100" accuracy="0"/>
 </assign>
 </action>

@@ -84,6 +84,7 @@ public:
 	void add(ADocumentRef * new_ref);
 	ADocumentRef * generateRef(const QString & extension);
 	ADocumentRef * generateRef(const std::string & extension);
+    ADocumentRef * generateRef(const QString & extension, const QString & id, const QString & sdp_tag);
 	void foreach_doc(const QString & extension, std::function<void(ADocumentRef*)> fun);
 	void applyTemplate(AProjectTemplate * templ);
 public:
