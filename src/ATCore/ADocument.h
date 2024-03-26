@@ -10,7 +10,7 @@ class _xmlNode;
 class AT_CORE_API ADocument
 {
 public:
-    enum class Type {EDFD, ArchitectureMaket, SDP, NotSystem};
+    enum class Type {EDFD, ArchitectureMaket, SDP, NotSystem, Ontology};
 
 	const std::string & fileName() const;
 

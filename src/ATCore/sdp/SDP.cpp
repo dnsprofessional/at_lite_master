@@ -1,4 +1,5 @@
 #include "SDP.h"
+#include <stdexcept>
 
 void SDP::set_name(const std::string name)
 {

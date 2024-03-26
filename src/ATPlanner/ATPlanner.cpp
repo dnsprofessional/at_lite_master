@@ -9,6 +9,7 @@
 #include <ATGUI/APluginManager.h>
 #include <ATGUI/APlugin.h>
 #include <ATCore/architecture/AArchitectureDocument.h>
+#include <ATCore/ontology/OntologyDocument.h>
 //#include <ATCore/ACommandExecutor.h>
 #include <vector>
 #include <iostream>
@@ -76,13 +77,19 @@ AError ATPlanner::buildGeneralizedPlan()
         std::cout << err.text() << std::endl;
         return err;
     }
+    OntologyDocument ontdoc;
+    if (!(err = ontdoc.loadFromFile("kb/ontology.xml")).OK())
+    {
+        std::cout << err.text() << std::endl;
+        return err;
+    }
 
 	if(!common_dfd)
 		return AError(AT_ERROR_UNKNOWN, "Failed to build general EDFD diagram");
 
 	EDFDCover cover;
     auto plan = cover.buildPlan(m_pProject, common_dfd, sdps.getSDPs());
-
+    plan->weights = ontdoc.onto->getRucWeights();
 	//Sample
     //auto kbs_ref = m_pProject->generateRef("kbs");
     //auto dsf_ref = m_pProject->generateRef("dsf");
@@ -119,7 +126,7 @@ AError ATPlanner::buildGeneralizedPlan()
     //plan->addTask(task3, { task1 });
 
 	//Show plan and make current
-	setPlan(plan);
+    setPlan(plan);
 
 	return AError();
 }

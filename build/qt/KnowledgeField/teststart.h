@@ -1,7 +1,7 @@
 #ifndef TESTSTART_H
 #define TESTSTART_H
 
-#include "/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/alertshow.h"
+#include "/home/malloc/at_lite-master/build/qt/KnowledgeField/alertshow.h"
 #include <QDialog>
 
 namespace Ui {

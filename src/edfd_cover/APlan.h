@@ -156,6 +156,7 @@ public:
 
 	std::vector<APlanTask*> tasks;
 	explicit_graph<APlanTask*, bool> predcess;
+    std::vector<std::pair<std::string, std::size_t>> weights;
 };
 
 

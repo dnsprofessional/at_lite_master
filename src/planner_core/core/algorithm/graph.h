@@ -8,6 +8,7 @@
 #include <list>
 #include <functional>
 #include <cassert>
+#include <stdexcept>
 #include <algorithm>
 
 template<typename V>

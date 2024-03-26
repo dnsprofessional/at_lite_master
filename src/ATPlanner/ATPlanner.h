@@ -4,6 +4,7 @@
 #include "config.h"
 #include <ATCore/AError.h>
 #include <ATCore/ADelegatedObject.h>
+#include <vector>
 
 class APlannerWidget;
 class ATPlanner;
@@ -61,7 +62,7 @@ public:
 	int executeTask(ASubTask * task);
     APluginManager * m_pPluginManager;
 private:
-	void setPlan(APlan * new_plan);
+    void setPlan(APlan * new_plan);
 private:
 	APlan * m_pCurrentPlan;
 	APlannerWidget * m_pPlannerWidget;

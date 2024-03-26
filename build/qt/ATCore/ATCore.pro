@@ -22,13 +22,16 @@ edfd/AScheme.cpp       edfd/DFDAnchor.cpp     edfd/DFDConnection.cpp edfd/DFDEle
 documents/AKBDocument.cpp \
 utils/geometry.cpp utils/helpers.cpp utils/xml_helpers.cpp check.cpp \
     ../../../src/ATCore/sdp/SDP.cpp \
-    ../../../src/ATCore/sdp/SDPDocument.cpp
-
+    ../../../src/ATCore/sdp/SDPDocument.cpp \
+    ../../../src/ATCore/ontology/Ontology.cpp \
+    ../../../src/ATCore/ontology/OntologyDocument.cpp
 
 HEADERS += ADelegatedObject.h ADocument.h        AError.h           ALogManager.h      ANamedObject.h     ASingleton.h       config.h check.h \
     ../../../src/ATCore/sdp/SDP.h \
-    ../../../src/ATCore/sdp/SDPDocument.h
+    ../../../src/ATCore/sdp/SDPDocument.h \
+    ../../../src/ATCore/ontology/Ontology.h \
+    ../../../src/ATCore/ontology/OntologyDocument.h
 
 
-LIBS += -L../libxml2 -lxml2 -L../libiconv -liconv 
+LIBS += -L../libxml2 -lxml2 -L../libiconv -liconv -libgvc
 

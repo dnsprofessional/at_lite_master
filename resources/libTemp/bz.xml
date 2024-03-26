@@ -5,13 +5,13 @@
 <from>0</from>
 <to>100000</to>
 </type>
-<type id="ТИП4" meta="string" desc="string">
-<value>dfghfg</value>
-</type>
 <type id="ТИП3" meta="string" desc="string">
 </type>
 <type id="ТИП2" meta="string" desc="string">
-<value>jhghj</value>
+<value>авпавпвапавп</value>
+</type>
+<type id="ТИП4" meta="string" desc="string">
+<value>апрпарп</value>
 </type>
 </types>
 <classes>
@@ -33,14 +33,14 @@
 <ref id="Пациент">
 <ref id="Атрибут3"/>
 </ref>
-<value>dfghfg</value>
+<value>апрпарп</value>
 </eq>
 </condition>
 <action>
 <assign>
 <ref id="Пациент">
 <ref id="Атрибут1"/>
-</ref><value>jhghj</value>
+</ref><value>авпавпвапавп</value>
 <with belief="50" probability="100" accuracy="0"/>
 </assign>
 </action>

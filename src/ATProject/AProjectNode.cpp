@@ -2,7 +2,7 @@
 #include <ATCore/ADocument.h>
 #include <ATCore/utils/xml_helpers.h>
 #include <algorithm>
-
+#include <stdexcept>
 using namespace std;
 
 AProjectNode::AProjectNode(const std::string & _name)

@@ -2,8 +2,8 @@
 #include <sstream>
 #include <algorithm>
 #include <regex>
-#include "/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/alertshow.h"
-#include "/home/everyone/Bobrovskaya8_2/at_lite-amrr-md-mod/build/qt/KnowledgeField/teststart.h"
+#include "/home/malloc/at_lite-master/build/qt/KnowledgeField/alertshow.h"
+#include "/home/malloc/at_lite-master/build/qt/KnowledgeField/teststart.h"
 #include <QApplication>
 #include <QTextEdit>
 #include <ATShell/ATApplication.h>
