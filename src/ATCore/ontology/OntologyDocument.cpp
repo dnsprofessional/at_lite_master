@@ -38,6 +38,8 @@ Ontology OntologyDocument::deserialize_ontology(_xmlNode* ontology_node) const {
     std::vector<Ontology::Ruc> v_rucs;
     std::vector<Ontology::Top_level_rel> v_top_level_rel;
     std::vector<Ontology::Top_ruc_rel> v_top_ruc_rels;
+    std::vector<Ontology::Top_method_rel> v_top_method_rels;
+    std::vector<Ontology::Ruc_method_rel> v_ruc_method_rels;
 
     xmlNode* top_level = child_for_path(ontology_node, "top_level");
     if (top_level != nullptr)
@@ -49,10 +51,20 @@ Ontology OntologyDocument::deserialize_ontology(_xmlNode* ontology_node) const {
         xml_for_each_child(top_rels, top_rel)
             v_top_level_rel.push_back(deserialize_top_rel(top_rel));
 
-    xmlNode* top_ruc_rels = child_for_path(ontology_node, "top_ruc_rels");
-    if (top_ruc_rels != nullptr)
-        xml_for_each_child(top_ruc_rels, top_ruc_rel)
-            v_top_ruc_rels.push_back(deserialize_top_ruc_rel(top_ruc_rel));
+    xmlNode* top_method_rels = child_for_path(ontology_node, "top_method_rels");
+    if (top_rels != nullptr)
+        xml_for_each_child(top_method_rels, top_method_rel)
+            v_top_method_rels.push_back(deserialize_top_method_rel(top_method_rel));
+
+    xmlNode* ruc_method_rels = child_for_path(ontology_node, "ruc_method_rels");
+    if (top_rels != nullptr)
+        xml_for_each_child(ruc_method_rels, ruc_method_rel)
+            v_ruc_method_rels.push_back(deserialize_ruc_method_rel(ruc_method_rel));
+
+//    xmlNode* top_ruc_rels = child_for_path(ontology_node, "top_ruc_rels");
+//    if (top_ruc_rels != nullptr)
+//        xml_for_each_child(top_ruc_rels, top_ruc_rel)
+//            v_top_ruc_rels.push_back(deserialize_top_ruc_rel(top_ruc_rel));
 
     xmlNode* methods = child_for_path(ontology_node, "methods");
     if (methods != nullptr)
@@ -64,12 +76,40 @@ Ontology OntologyDocument::deserialize_ontology(_xmlNode* ontology_node) const {
         xml_for_each_child(rucs, ruc)
             v_rucs.push_back(deserialize_ruc(ruc));
 
-    Ontology res(v_top_levels, v_methods, v_rucs, v_top_level_rel, v_top_ruc_rels);
+    Ontology res(v_top_levels, v_methods, v_rucs, v_top_level_rel, v_top_ruc_rels, v_top_method_rels, v_ruc_method_rels);
     res.init_methods_rels();
     ontology_to_graphviz(res);
     system("dot -Tpng kb/ontology.dot -o kb/ontology.png");
     system("open kb/ontology.png");
-    return Ontology(v_top_levels, v_methods, v_rucs, v_top_level_rel, v_top_ruc_rels);
+    return Ontology(v_top_levels, v_methods, v_rucs, v_top_level_rel, v_top_ruc_rels, v_top_method_rels, v_ruc_method_rels);
+}
+
+Ontology::Top_method_rel OntologyDocument::deserialize_top_method_rel(_xmlNode* top_rel_node) const {
+    Ontology::Top_method_rel result;
+    static const std::unordered_map<std::string, Ontology::Rel_type> string_to_rel_type = {
+        {"RA", Ontology::Rel_type::RA},
+        {"RS", Ontology::Rel_type::RS},
+        {"RM", Ontology::Rel_type::RM},
+        {"RL", Ontology::Rel_type::RL}
+    };
+    result.src_id  = atoi(xml_prop(top_rel_node, "top_id"));
+    result.dest_id = atoi(xml_prop(top_rel_node, "method_id"));
+    result.type = string_to_rel_type.find(xml_prop(top_rel_node, "type"))->second;
+    return result;
+}
+
+Ontology::Ruc_method_rel OntologyDocument::deserialize_ruc_method_rel(_xmlNode* top_rel_node) const {
+    Ontology::Ruc_method_rel result;
+    static const std::unordered_map<std::string, Ontology::Rel_type> string_to_rel_type = {
+        {"RA", Ontology::Rel_type::RA},
+        {"RS", Ontology::Rel_type::RS},
+        {"RM", Ontology::Rel_type::RM},
+        {"RL", Ontology::Rel_type::RL}
+    };
+    result.src_id  = atoi(xml_prop(top_rel_node, "ruc_id"));
+    result.dest_id = atoi(xml_prop(top_rel_node, "method_id"));
+    result.type = string_to_rel_type.find(xml_prop(top_rel_node, "type"))->second;
+    return result;
 }
 
 Ontology::Top_level OntologyDocument::deserialize_top_level(_xmlNode* top_level_node) const {
