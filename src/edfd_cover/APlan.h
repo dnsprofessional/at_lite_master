@@ -73,6 +73,7 @@ public:
 	std::vector<ADocumentRef*> docsIn, docsOut;
 	bool closed;
 	bool inProgress;
+    std::size_t weight;
 };
 
 class EDFD_COVER_API AHierarchyPlanPresentation

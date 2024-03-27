@@ -1,0 +1,150 @@
+<ontology> 
+ <top_level> 
+  <vertex name = "Подсистема поддержки построения динамических ИЭС" type = "Subsystem" id = "0"/> 
+  <vertex name = "Подсистема поддержки построения средств вывода и объяснения" type = "Subsystem" id = "1"/> 
+  <vertex name = "Средства поддержки совместного функционирования" type = "Tools" id = "2"/> 
+  <vertex name = "Темпоральный решатель" type = "Component" id = "3"/> 
+  <vertex name = "Компонент совместного функционирования подсистемы имитационного моделирования, темпорального решателя и АТ-РЕШАТЕЛЯ" type = "Component" id = "4"/> 
+  <vertex name = "Универсальный АТ-РЕШАТЕЛЬ" type = "Component" id = "5"/> 
+  <vertex name = "Подсистема имитационного моделирования" type = "Subsystem" id = "6"/> 
+  <vertex name = "Средства разработки имитационой модели" type = "Tools" id = "7"/> 
+  <vertex name = "Средства расчета имитационой модели" type = "Tools" id = "8"/> 
+  <vertex name = "Компонент визуализации ИМ" type = "Component" id = "9"/> 
+  <vertex name = "Компонент синтеза моделей" type = "Component" id = "10"/> 
+  <vertex name = "Редактор визуальных объектов" type = "Component" id = "11"/> 
+  <vertex name = "Транслятор языка РДОАТ" type = "Component" id = "12"/> 
+  <vertex name = "Компонент имитации дискретного модельного времени" type = "Component" id = "13"/> 
+  <vertex name = "Компонент генерации случайных событий" type = "Component" id = "14"/> 
+  <vertex name = "Компонент трассировки" type = "Component" id = "15"/> 
+  <vertex name = "Компонент расчета состояний ИМ" type = "Component" id = "16"/> 
+  <vertex name = "Средства верификации ПЗ" type = "Tools" id = "17"/> 
+ </top_level> 
+ <top_rels> 
+  <top_rel src_id =  "0" dest_id = "2"/>
+  <top_rel src_id =  "0" dest_id = "5"/> 
+  <top_rel src_id =  "2" dest_id = "4"/> 
+  <top_rel src_id =  "1" dest_id = "3"/> 
+  <top_rel src_id =  "6" dest_id = "7"/> 
+  <top_rel src_id =  "6" dest_id = "8"/> 
+  <top_rel src_id =  "7" dest_id = "9"/> 
+  <top_rel src_id =  "7" dest_id = "10"/> 
+  <top_rel src_id =  "7" dest_id = "11"/> 
+  <top_rel src_id =  "8" dest_id = "12"/> 
+  <top_rel src_id =  "8" dest_id = "13"/> 
+  <top_rel src_id =  "8" dest_id = "14"/> 
+  <top_rel src_id =  "8" dest_id = "15"/> 
+  <top_rel src_id =  "8" dest_id = "16"/> 
+ </top_rels>
+ <methods> 
+  <method name = "Метод, обеспечивающий загрузку во внутреннее предстваление описаний событий и интервалов ПрО" id = "0"/>
+  <method name = "Метод, обеспечивающий разрешение  конфликтов между поступающими данными и текущей интерпретацией" id = "1"/>
+  <method name = "Метод, реализующий проверку соответствия поступающих на каждом такте работы данных условиям возникновения событий и интервалов" id = "2"/>
+  <method name = "Метод, реализующий загрузки и означивания темпоральных частей правил" id = "3"/> 
+  <method name = "Метод, реализующий  процесс сопоставления" id = "4"/> 
+  <method name = "Метод, обеспечивающий разрешение конфликтов между правилами из конфликтного набора правил" id = "5"/> 
+  <method name = "Метод, реализующий эвристический поиск подходящей подцели в случае нахождения невыполнимых правил" id = "6"/> 
+  <method name = "Метод, реализующий выбор конечной цели и подцелей" id = "7"/> 
+  <method name = "Метод, реализующий генерацию уточняющего поддиалога" id = "8"/>
+  <method name = "Метод, реализующий исполнение действий правил и процедур" id = "9"/>
+  <method name = "Метод, обеспечивающий вызов функций внешних программных средств" id = "10"/>
+  <method name = "Метод, реализующий взаимодействие средств вывода с другими компонентами в составе прототипа ИЭС" id = "11"/> 
+  <method name = "Метод, составляющий кадры анимации для соответствующего объекта модели" id = "12"/> 
+  <method name = "Метод, реализующий отрисовку кадров" id = "13"/> 
+  <method name = "Метод, реализующий создание объектов" id = "14"/> 
+  <method name = "Метод, реализующий копирование объектов" id = "15"/> 
+  <method name = "Метод, реализующий удаление объектов" id = "16"/> 
+  <method name = "Метод, задающий отношение между объектами" id = "17"/> 
+  <method name = "Метод, реализующий генерацию описания на языке РДОАТ в формате XML" id = "18"/> 
+  <method name = "Метод, реализующий анализ описания" id = "19"/> 
+  <method name = "Метод, реализующий трансляцию языка РДОАТ в C#" id = "20"/> 
+  <method name = "Метод, реализующий расчет нового состояния ИМ" id = "21"/> 
+  <method name = "Метод установки продолжительности времени такта дискретного модельного времени (в мс)" id = "22"/> 
+  <method name = "Метод, определяющий компонент и управляющее воздействие, которое ему необходимо отправить" id = "23"/> 
+  <method name = "Метод, реализующий отсчет тактов дискретного модельного времени в соответствии с продолжительностью такта" id = "24"/> 
+  <method name = "Метод, принимающий входные сообщения" id = "25"/> 
+  <method name = "Метод установки имен для объектов подсистемы имитационного моделирования, темпорального решателя и АТ-РЕШАТЕЛЯ" id = "26"/> 
+  <method name = "Метод, реализующий поиск конфликтных правил" id = "27"/> 
+  <method name = "Метод, реализующий поиск поиск избыточности в правилах" id = "28"/> 
+  <method name = "Метод, реализующий поиск пересекающихся правил" id = "29"/> 
+  <method name = "Метод, реализующий поиск пропущенных правил" id = "30"/> 
+  <method name = "Метод, реализующий поиск атрибутов без ссылок" id = "31"/> 
+ </methods>
+ <top_method_rels>
+  <top_method_rel top_id = "3" method_id = "0" type = "RM"/>
+  <top_method_rel top_id = "3" method_id = "1" type = "RS"/>
+  <top_method_rel top_id = "3" method_id = "2" type = "RS"/>
+  <top_method_rel top_id = "3" method_id = "3" type = "RS"/>
+  <top_method_rel top_id = "5" method_id = "4" type = "RS"/>
+  <top_method_rel top_id = "5" method_id = "5" type = "RS"/>
+  <top_method_rel top_id = "5" method_id = "6" type = "RS"/>
+  <top_method_rel top_id = "5" method_id = "7" type = "RS"/>
+  <top_method_rel top_id = "5" method_id = "8" type = "RS"/>
+  <top_method_rel top_id = "5" method_id = "9" type = "RS"/>
+  <top_method_rel top_id = "5" method_id = "10" type = "RS"/>
+  <top_method_rel top_id = "5" method_id = "11" type = "RS"/>
+  <top_method_rel top_id = "4" method_id = "22" type = "RS"/>
+  <top_method_rel top_id = "4" method_id = "23" type = "RS"/>
+  <top_method_rel top_id = "4" method_id = "24" type = "RS"/>
+  <top_method_rel top_id = "4" method_id = "25" type = "RS"/>
+  <top_method_rel top_id = "4" method_id = "26" type = "RS"/>
+  <top_method_rel top_id = "9" method_id = "12" type = "RS"/>
+  <top_method_rel top_id = "9" method_id = "13" type = "RS"/>
+  <top_method_rel top_id = "10" method_id = "14" type = "RM"/>
+  <top_method_rel top_id = "10" method_id = "15" type = "RM"/>
+  <top_method_rel top_id = "10" method_id = "16" type = "RM"/>
+  <top_method_rel top_id = "10" method_id = "17" type = "RS"/>
+  <top_method_rel top_id = "10" method_id = "18" type = "RS"/>
+  <top_method_rel top_id = "11" method_id = "14" type = "RS"/>
+  <top_method_rel top_id = "11" method_id = "15" type = "RS"/>
+  <top_method_rel top_id = "11" method_id = "16" type = "RS"/>
+  <top_method_rel top_id = "11" method_id = "17" type = "RS"/>
+  <top_method_rel top_id = "12" method_id = "18" type = "RM"/>
+  <top_method_rel top_id = "12" method_id = "20" type = "RM"/>
+  <top_method_rel top_id = "12" method_id = "19" type = "RS"/>
+  <top_method_rel top_id = "16" method_id = "21" type = "RS"/>
+  <top_method_rel top_id = "17" method_id = "27" type = "RS"/>
+  <top_method_rel top_id = "17" method_id = "28" type = "RS"/>
+  <top_method_rel top_id = "17" method_id = "29" type = "RS"/>
+  <top_method_rel top_id = "17" method_id = "30" type = "RS"/>
+  <top_method_rel top_id = "17" method_id = "31" type = "RS"/>
+ </top_method_rels>
+ <method_rels>
+ </method_rels>  
+ <RUCs> 
+  <RUC name = "ПИК Темпоральный решатель" id = "0" methods = "0 1 2 3" interfaces = ""/>
+  <RUC name = "ПИК Универсальный АТ-решатель" id = "1" methods = "4 5 6 7 8 9 10 11" interfaces = ""/>
+  <RUC name = "ПИК Совместное функционирование подсистемы имитационного моделирования, темпорального решателя и АТ-РЕШАТЕЛЯ" id = "2" methods = "22 23 24 25 26" interfaces = ""/> 
+  <RUC name = "ПИК Визуализация" id = "3" methods = "12 13" interfaces = ""/> 
+  <RUC name = "ПИК Редактор визуальных объектов" id = "4" methods = "14 15 16 17" interfaces = ""/> 
+  <RUC name = "ПИК Синтез моделей" id = "5" methods = "18" interfaces = ""/> 
+  <RUC name = "ПИК Транслятор языка РДОАТ" id = "6" methods = "19 20" interfaces = ""/> 
+  <RUC name = "ПИК Поддержка расчета состояний имитационной модели" id = "7" methods = "21" interfaces = ""/>
+  <RUC name = "ПИК Верификация ПЗ" id = "8" methods = "27 28 29 30 31" interfaces = ""/> 
+ </RUCs>
+ <ruc_method_rels>
+    <ruc_method_rel ruc_id = "1" method_id = "0" type = "RS"/>
+    <ruc_method_rel ruc_id = "1" method_id = "1" type = "RS"/>
+    <ruc_method_rel ruc_id = "1" method_id = "2" type = "RS"/>
+    <ruc_method_rel ruc_id = "1" method_id = "3" type = "RS"/>
+    <ruc_method_rel ruc_id = "1" method_id = "22" type = "RL"/>
+    <ruc_method_rel ruc_id = "1" method_id = "23" type = "RM"/>
+    <ruc_method_rel ruc_id = "1" method_id = "24" type = "RL"/>
+    <ruc_method_rel ruc_id = "1" method_id = "25" type = "RM"/>
+    <ruc_method_rel ruc_id = "1" method_id = "26" type = "RM"/>
+    <ruc_method_rel ruc_id = "0" method_id = "22" type = "RS"/>
+    <ruc_method_rel ruc_id = "0" method_id = "23" type = "RM"/>
+    <ruc_method_rel ruc_id = "0" method_id = "24" type = "RS"/>
+    <ruc_method_rel ruc_id = "0" method_id = "25" type = "RM"/>
+    <ruc_method_rel ruc_id = "0" method_id = "26" type = "RM"/>
+    <ruc_method_rel ruc_id = "7" method_id = "22" type = "RL"/>
+    <ruc_method_rel ruc_id = "7" method_id = "23" type = "RM"/>
+    <ruc_method_rel ruc_id = "7" method_id = "24" type = "RL"/>
+    <ruc_method_rel ruc_id = "7" method_id = "25" type = "RM"/>
+    <ruc_method_rel ruc_id = "7" method_id = "26" type = "RM"/>
+    <ruc_method_rel ruc_id = "5" method_id = "14" type = "RS"/>
+    <ruc_method_rel ruc_id = "5" method_id = "15" type = "RS"/>
+    <ruc_method_rel ruc_id = "5" method_id = "16" type = "RS"/>
+    <ruc_method_rel ruc_id = "5" method_id = "17" type = "RS"/>
+    <ruc_method_rel ruc_id = "6" method_id = "18" type = "RS"/>
+ </ruc_method_rels>
+</ontology>

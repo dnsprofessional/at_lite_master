@@ -63,9 +63,13 @@ void calc_ruc_weights(Ontology& onto){
         }
         onto.m_ruc_weights.emplace_back(std::pair<std::string, std::size_t>(ruc.name, weight));
     }
+    for(auto& pair : onto.m_ruc_weights){
+        if(pair.first == "ПИК Верификация ПЗ")
+            pair.first = "Верификация ПЗ";
+    }
     onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Приобретение знаний", 63));
     onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Извлечение знаний из БД", 26));
-    onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Объединение", 22));
+    onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Объединение фрагментов ПЗ", 22));
 }
 
 void ontology_to_graphviz(Ontology& onto){

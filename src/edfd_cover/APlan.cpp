@@ -108,7 +108,6 @@ AHierarchyPlanPresentation * APlan::hierarchyPresentation() const
     std::sort(_tasks.begin(), _tasks.end());
     auto last_it = std::unique(_tasks.begin(), _tasks.end());
     _tasks.erase(last_it, _tasks.end());
-    std::wstring first_stage("Анализ системных требований");
     //Make unique general tasks
     std::set<std::wstring> gtasks;
     for (auto t : _tasks)
@@ -145,9 +144,21 @@ AHierarchyPlanPresentation * APlan::hierarchyPresentation() const
                 return utf8_to_wstring(el->stage) != st;
             });
             new_stage->tasks.erase(last_it, new_stage->tasks.end());
-            if(new_stage->name){
 
-            }
+            new_stage->tasks.erase(last_it, new_stage->tasks.end());
+                        if(new_stage->name == L"Анализ системных требований"){
+                            for(auto& task : new_stage->tasks){
+                                for(auto& pair : weights){
+                                    if(task->name == pair.first){
+                                        task->weight = pair.second;
+                                    }
+                                }
+                            }
+                            std::sort(new_stage->tasks.begin(), new_stage->tasks.end(), [&](APlanTask * lhs, APlanTask * rhs){
+                                return lhs->weight > rhs->weight;
+                            });
+                            continue;
+                        }
 
             //Sort tasks
             std::sort(new_stage->tasks.begin(), new_stage->tasks.end(), [&](APlanTask * lhs, APlanTask * rhs) {
