@@ -146,7 +146,7 @@ AHierarchyPlanPresentation * APlan::hierarchyPresentation() const
             new_stage->tasks.erase(last_it, new_stage->tasks.end());
 
             new_stage->tasks.erase(last_it, new_stage->tasks.end());
-                        if(new_stage->name == L"Анализ системных требований"){
+                        if(new_stage->name == L"Анализ системных требований" || new_stage->name == L"Реализация"){
                             for(auto& task : new_stage->tasks){
                                 for(auto& pair : weights){
                                     if(task->name == pair.first){

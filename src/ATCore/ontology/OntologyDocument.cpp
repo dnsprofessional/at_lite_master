@@ -79,9 +79,9 @@ Ontology OntologyDocument::deserialize_ontology(_xmlNode* ontology_node) {
     onto = std::unique_ptr<Ontology>(new Ontology(v_top_levels, v_methods, v_rucs, v_top_level_rel, v_top_ruc_rels, v_top_method_rels, v_ruc_method_rels));
     onto->init_methods_rels();
     calc_ruc_weights(*onto);
-    ontology_to_graphviz(*onto);
-    system("dot -Tpng kb/ontology.dot -o kb/ontology.png");
-    system("open kb/ontology.png");
+    //ontology_to_graphviz(*onto);
+    //system("dot -Tpng kb/ontology.dot -o kb/ontology.png");
+    //system("open kb/ontology.png");
     return Ontology(v_top_levels, v_methods, v_rucs, v_top_level_rel, v_top_ruc_rels, v_top_method_rels, v_ruc_method_rels);
 }
 

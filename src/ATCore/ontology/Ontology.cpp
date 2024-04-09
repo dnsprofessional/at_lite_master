@@ -66,10 +66,21 @@ void calc_ruc_weights(Ontology& onto){
     for(auto& pair : onto.m_ruc_weights){
         if(pair.first == "ПИК Верификация ПЗ")
             pair.first = "Верификация ПЗ";
+        if(pair.first == "ПИК Синтез моделей")
+            pair.first = "Построение ИМ";
+        if(pair.first == "ПИК Редактор визуальных объектов")
+            pair.first = "Разработка визуальной составляющей ИМ";
     }
     onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Приобретение знаний", 63));
     onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Извлечение знаний из БД", 26));
     onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Объединение фрагментов ПЗ", 22));
+    onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Дизайн объяснений", 30));
+    onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Настройка объяснительного компонента", 28));
+    onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Настройка драйвера", 26));
+    onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Конфигурация компонентов ядра ИЭС", 24));
+    onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Настройка СУБД", 22));
+    onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Подключение библиотеки ППП", 20));
+    onto.m_ruc_weights.push_back(std::pair<std::string, std::size_t>("Написание сценария диалога", 18));
 }
 
 void ontology_to_graphviz(Ontology& onto){
